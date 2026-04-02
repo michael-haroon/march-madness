@@ -17,7 +17,7 @@ We are analyzing binary futures contracts that expire soon. So we have two label
 
 ## Team Stats 
 - WARNING: the following have overlap so how might use it in ML feature discovery?
-- We need more information on recent games
+- Note that my team stats might be more recent than kaggles
     - [ ] A KEY feature is scoring margin in recent games and their difficulty!
     - [ ] average stats per game from `/{year]}team-stats`
         - the issue with this data is that, although it is theoretically unbiased, it is not a good fit for some distributions. so we have to find the distribution of games. Maybe the ML can do that when finding features.

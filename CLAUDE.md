@@ -134,10 +134,9 @@ Use `data/kaggle/MTeamSpellings.csv` as the primary name → TeamID mapper. It h
 - `pipeline/run.py` — Step 3b: SFI on Tier 1 (~1,400 tournament team rows). Step 8: feature discovery catalog CSV.
 
 ### Cross-source reconciliation findings
-Running `reconcile_cross_source()` on the data revealed:
-- **r > 0.95 (drop ts_, use Kaggle)**: `ts_fg_pct_def`, `ts_ft_pct`, `ts_three_pct`, `ts_scoring_margin`, `ts_efg_pct`, `ts_assists_pg`, `ts_steals_pg`, `ts_blocks_pg`
-- **r < 0.95 (keep both)**: `ts_fg_pct` (r=0.50! different because ts_ includes tournament games), `ts_off_reb_pg` (r=0.90), `ts_def_reb_pg` (r=0.90)
-- The `ts_fg_pct` vs `kg_fg_pct` divergence (r=0.50) is meaningful: ts_ includes tournament games through E8, kg_ is regular season only. Both capture real signal.
+`reconcile_cross_source()` always drops ts_ in favor of kg_ — no correlation gate. Kaggle covers all years with consistent game-level aggregation; ts_ is spot data for a subset of years. Correlation is printed as a diagnostic only.
+- **All ts_ equivalents dropped**: `ts_fg_pct`, `ts_fg_pct_def`, `ts_ft_pct`, `ts_three_pct`, `ts_scoring_margin`, `ts_efg_pct`, `ts_off_reb_pg`, `ts_def_reb_pg`, `ts_assists_pg`, `ts_steals_pg`, `ts_blocks_pg`
+- Note: `kg_fg_pct` vs `ts_fg_pct` correlation is low (r≈0.50) because ts_ includes tournament games through E8 while kg_ is regular season only — but we still prefer kg_ for consistency.
 
 ### Team-stats PCA findings
 7 components explain 93.1% variance of the 11 retained ts_* features:
