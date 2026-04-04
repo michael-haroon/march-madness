@@ -1,10 +1,14 @@
+# PIVITOL CHANGE!!!
+- [x] We are changing labels. instead of trying to get "Given this final four, what are their probabilities of winning" we ask  "Given all of history, which random walk throughout the future (ie which possibility) is most likely to happen?"
+    - phase 1a implmeneted. now test it and do phase 1b
+---
 Look at data you have for 2026. get that for the past. We don't use RPI in 2026 so who cares
 
 
 - Why do we even need Warner Nolan team sheet? Use all other data first, then come back to it
 - move all features into kaggle datasets and just build on top of their dataset.
-    - [ ] SOS 
-        - (from nitty gritty for 2020-2026 then pdf from before 2020)
+    - [x] SOS 
+        - (from ~~nitty gritty for 2020-2026 then~~ pdf from before 2020)
     - [ ]  BPI
         - We ONLY put 2026 bpi from espn bc it is pre F4. get bpi from team sheets for before that that. bpi is is 09-13 (kaggle) and 18-19 (rpi team sheets) and 26 (espn) missing for 2021-2025. so only  
         - CHECK: are we just using BPI to see finals (so like <10 seasons of data?) or is it for every game (fo game n, check bpi for both team and see predictive power; more data this way but bpi early season might be weak predictively)

@@ -868,19 +868,21 @@ def load_all(data_dir: str = "data",
         df = df.merge(locs, on="year", how="left")
 
     # ── Kaggle integration ────────────────────────────────────────────────
+    import time as _t
     if include_kaggle and os.path.isdir(kaggle_dir):
-        if verbose:
-            print("\n=== Loading Kaggle tournament labels ===")
+        _t0 = _t.time(); print("  [load_all] load_tournament_labels...", flush=True)
         tourn_labels = load_tournament_labels(kaggle_dir)
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
-        if verbose:
-            print("\n=== Loading Kaggle game stats ===")
+        _t0 = _t.time(); print("  [load_all] load_kaggle_game_stats...", flush=True)
         game_stats = load_kaggle_game_stats(kaggle_dir)
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
-        if verbose:
-            print("\n=== Loading Massey ordinals ===")
+        _t0 = _t.time(); print("  [load_all] load_massey_ordinals...", flush=True)
         massey = load_massey_ordinals(kaggle_dir)
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
+        _t0 = _t.time(); print("  [load_all] merging tournament labels...", flush=True)
         if not df.empty and not tourn_labels.empty:
             # Merge survival labels onto existing frame (Final Four teams first)
             df = df.merge(
@@ -903,7 +905,9 @@ def load_all(data_dir: str = "data",
                 df["in_final_four"]  = df["in_final_four"].fillna(0).astype(int)
                 df["finish_rank"]    = df["finish_rank"].fillna(0).astype(int)
                 df["champion_flag"]  = df["champion_flag"].fillna(0).astype(int)
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
+        _t0 = _t.time(); print("  [load_all] merging game stats...", flush=True)
         # Merge game stats on (year, TeamID) if TeamID is available, else skip
         if not game_stats.empty and "TeamID" in df.columns:
             df = df.merge(game_stats, on=["year", "TeamID"], how="left")
@@ -923,15 +927,17 @@ def load_all(data_dir: str = "data",
                 game_stats_named.drop(columns=["TeamID"]),
                 on=["year", "team"], how="left"
             )
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
+        _t0 = _t.time(); print("  [load_all] merging massey ordinals...", flush=True)
         # Merge Massey ordinals
         if not massey.empty and "TeamID" in df.columns:
             df = df.merge(massey, on=["year", "TeamID"], how="left")
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
 
-        # Merge BPI at Final Four (DayNum=152)
-        if verbose:
-            print("\n=== Loading BPI at finals ===")
+        _t0 = _t.time(); print("  [load_all] load_bpi_at_finals...", flush=True)
         bpi_finals = load_bpi_at_finals(kaggle_dir)
+        print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
         if not bpi_finals.empty and "TeamID" in df.columns:
             df = df.merge(bpi_finals, on=["year", "TeamID"], how="left")
 
@@ -966,12 +972,16 @@ def load_all(data_dir: str = "data",
     if include_market:
         try:
             from feature_pipeline.market_features import load_kalshi_trades, compute_market_features
-            if verbose:
-                print("\n=== Loading market features ===")
+            _t0 = _t.time(); print("  [load_all] load_kalshi_trades...", flush=True)
             trades = load_kalshi_trades(data_dir)
+            print(f"  [load_all] trades loaded ({_t.time()-_t0:.1f}s)", flush=True)
             if not trades.empty:
+                _t0 = _t.time(); print("  [load_all] compute_market_features...", flush=True)
                 mkt = compute_market_features(trades)
+                print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
+                _t0 = _t.time(); print("  [load_all] merging market features...", flush=True)
                 df = df.merge(mkt, on=["year", "team"], how="left")
+                print(f"  [load_all] done ({_t.time()-_t0:.1f}s)", flush=True)
         except ImportError:
             warnings.warn("market_features.py not yet available — skipping market data")
 

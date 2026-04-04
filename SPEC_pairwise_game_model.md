@@ -605,6 +605,133 @@ def test_simulation_deterministic_with_seed():
 
 ---
 
+## Phase 1B: Tournament Path Features (implement after Phase 1A works)
+
+### Motivation
+
+A team that blew out a 1-seed by 20 in the Elite Eight is genuinely different from one that needed OT against a 12-seed. Pre-tournament features (Phase 1A) treat these teams identically. Path features capture **current tournament form** — momentum, fatigue, matchup adaptability — which is real signal for later-round prediction.
+
+### What changes from Phase 1A
+
+| Aspect | Phase 1A | Phase 1B |
+|--------|----------|----------|
+| Features | Pre-tournament only | Pre-tournament + cumulative path stats |
+| Training data | All ~1,400 tourney games | Round 2+ games only (~1,100) for path model |
+| Monte Carlo sim | Static features per team | Features update after each simulated game |
+
+### New function: `compute_path_features(team_id, season, game_results_so_far) -> dict`
+
+**Purpose**: Given a team's tournament games played so far, compute cumulative path features.
+
+**Input**:
+- `team_id`: int
+- `season`: int
+- `game_results_so_far`: DataFrame of this team's tournament games (from `MNCAATourneyDetailedResults.csv`), filtered to DayNum < current game's DayNum
+
+**Output**: dict with keys:
+```python
+{
+    "path_games_played": int,           # number of tourney games played (0-5)
+    "path_avg_margin": float,           # mean scoring margin in tournament so far
+    "path_worst_margin": float,         # closest game (min margin, can be negative for sims)
+    "path_best_margin": float,          # most dominant win
+    "path_avg_opp_seed": float,         # average seed of opponents faced
+    "path_best_opp_seed": float,        # best (lowest) seed beaten
+    "path_fg_pct": float,               # tournament FG% so far
+    "path_opp_fg_pct": float,           # opponents' FG% against this team
+    "path_ot_games": int,               # number of OT games (fatigue signal)
+    "path_momentum": float,             # margin trend (last game margin - first game margin)
+}
+```
+
+**Implementation notes**:
+- For each tournament game where the team appeared (as W or L team), extract their stats and opponent stats.
+- `path_avg_margin`: mean of (team_score - opp_score) across games played.
+- `path_avg_opp_seed`: requires joining opponent TeamID to seeds table. Harder opponents = more impressive path.
+- `path_momentum`: positive = getting stronger through tournament.
+- If `path_games_played == 0` (first-round game), return all NaN — LightGBM handles this.
+
+### Modified `build_game_pairs` for path features
+
+Add an optional `include_path=True` parameter:
+
+```python
+def build_game_pairs(team_df, tourney_results_path, min_season=2003, 
+                     max_season=2025, include_path=False, tourney_detailed_path=None):
+```
+
+When `include_path=True`:
+1. Load `MNCAATourneyDetailedResults.csv` (need box scores, not just compact results).
+2. For each game in the tournament:
+   a. Find all prior tournament games for TeamA in this season (DayNum < this game's DayNum).
+   b. Compute `compute_path_features(TeamA, ...)`.
+   c. Repeat for TeamB.
+   d. Add `diff_path_*` columns (TeamA path features - TeamB path features).
+3. First-round games will have `path_games_played = 0` for both teams → all path diffs are 0 or NaN.
+
+This is safe — no lookahead because we only use games **before** the current one.
+
+### Modified `predict_final_four` for path simulation
+
+This is the key change. The Monte Carlo loop must now **accumulate simulated path features**:
+
+```python
+def predict_final_four(model, team_df, final_four_teams, feature_cols, 
+                       n_sims=50000, include_path=True, 
+                       actual_path_features=None, random_seed=None):
+    """
+    actual_path_features: dict[TeamID -> dict] from compute_path_features()
+        using REAL tournament results through Elite 8.
+        For 2026, these are known (the tournament has been played through E8).
+    """
+```
+
+For the Final Four simulation with path features:
+
+1. **Semifinal predictions use REAL path data** (4 games already played for each team). Call `compute_path_features()` on actual E8 results. This is not lookahead — these games have happened.
+
+2. **Championship prediction uses REAL path + SIMULATED semifinal**:
+   - The two semifinal winners have 5 real/simulated games in their path.
+   - After simulating a semifinal, append the simulated game result to the winner's path features:
+     ```python
+     # After simulating semi1 where Arizona beat UConn:
+     arizona_path["path_games_played"] += 1
+     # Use model's predicted margin as simulated margin (or draw from distribution)
+     arizona_path["path_avg_margin"] = updated_running_average
+     arizona_path["path_avg_opp_seed"] = updated_with_uconn_seed
+     ```
+   - This means the championship game prediction is informed by HOW the team won their semifinal.
+
+3. **Simulating margins** (for path feature updates): The LightGBM model predicts win probability, not margin. Two options:
+   - **Simple**: Use a fixed mapping from win probability to expected margin: `expected_margin = 20 * (win_prob - 0.5)`. Rough but functional.
+   - **Better**: Train a separate lightweight regression model on `(diff_features) -> actual_margin`. Use this to sample margins during simulation. Adds complexity — defer to Phase 2 if needed.
+
+### Training consideration
+
+When training with path features, you must decide:
+- **All rounds** (~1,400 games): Path features are 0/NaN for R1 games. The model learns that path features matter for later rounds and are absent for early rounds.
+- **Round 2+ only** (~1,100 games): Every training row has path data. But you lose R1 signal.
+
+**Recommendation**: Train on all rounds. LightGBM will learn to ignore path features when they're NaN (which only happens in R1) and use them when available.
+
+### New config constants
+
+```python
+PATH_FEATURES = [
+    "path_games_played", "path_avg_margin", "path_worst_margin",
+    "path_best_margin", "path_avg_opp_seed", "path_best_opp_seed",
+    "path_fg_pct", "path_opp_fg_pct", "path_ot_games", "path_momentum",
+]
+```
+
+### Validation
+
+- **Ablation test**: Compare CV AUC with and without path features. Path features should improve AUC for rounds 3+ (S16, E8, FF, Championship) but not R1/R32.
+- **Feature importance**: `path_avg_margin` and `path_avg_opp_seed` should rank high for late-round games.
+- **Sanity check**: For R1 games, predictions should be identical with and without path features (since path features are all NaN).
+
+---
+
 ## Optional Bayesian Extension (Phase 2, not in scope now)
 
 Once the LightGBM pairwise model is working, a natural extension is:

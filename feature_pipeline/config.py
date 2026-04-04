@@ -136,6 +136,12 @@ TEAM_NAME_MAP = {
     "UAB":                  "Alabama Birmingham",
     "UTSA":                 "Texas San Antonio",
     "UTEP":                 "Texas El Paso",
+    # Nitty-gritty abbreviations
+    "App State":            "Appalachian St",
+    "LMU (CA)":             "Loy Marymount",
+    "NIU":                  "N Illinois",
+    "UIW":                  "Incarnate Word",
+    "West Ga.":             "West Georgia",
 }
 
 # ── Missing data strategy ─────────────────────────────────────────────────────
@@ -200,7 +206,8 @@ MISSING_STRATEGY = {
 
 # ── Kaggle Massey ordinal systems to load (pre-tournament DayNum=133 only) ────
 # Chosen for long-running continuity and broad coverage.
-MASSEY_SYSTEMS = ["POM", "SAG", "RPI", "MOR", "WLK", "DOL", "COL"]
+MASSEY_SYSTEMS = ["POM", "SAG", "RPI", "MOR", "WLK", "DOL", "COL", "SOS", "NC_SOS",
+                  "SOS_D1", "SOS_NC", "OSOS_D1", "OSOS_NC", "BPI"]
 
 # ── Team-stats file configuration ─────────────────────────────────────────────
 # Each entry: canonical output column → {patterns: filename prefixes to match,
@@ -306,3 +313,86 @@ RF_PARAMS = {
     "random_state":         42,
     "n_jobs":               -1,
 }
+
+# ── Game-level model config (pairwise, all-tournament games) ──────────────────
+
+GAME_MODEL_FEATURES = [
+    # Kaggle regular season aggregates
+    "kg_win_pct", "kg_fg_pct", "kg_fg3_pct", "kg_ft_pct", "kg_efg_pct",
+    "kg_off_reb_pg", "kg_def_reb_pg", "kg_total_reb_pg",
+    "kg_off_reb_margin", "kg_def_reb_margin", "kg_total_reb_margin",
+    "kg_ast_pg", "kg_to_pg", "kg_to_margin",
+    "kg_stl_pg", "kg_blk_pg", "kg_scoring_margin", "kg_opp_fg_pct",
+    "kg_margin_last5", "kg_margin_last10",
+    # Family 1: recent-form delta vs season average
+    "kg_margin_last5_delta", "kg_margin_last10_delta",
+    "kg_fg_pct_last5_delta", "kg_to_margin_last5_delta", "kg_reb_margin_last5_delta",
+    # Family 2: SOS-stratified (NET-based, POM-based, avg of both)
+    # *_strong_* = stats vs top-100 opponents; *_margin_dropoff = season-strong (>0 = paper tiger)
+    "kg_net_strong_win_pct", "kg_net_strong_margin", "kg_net_margin_dropoff",
+    "kg_net_strong_to_margin", "kg_net_strong_reb_margin",
+    "kg_pom_strong_win_pct", "kg_pom_strong_margin", "kg_pom_margin_dropoff",
+    "kg_pom_strong_to_margin", "kg_pom_strong_reb_margin",
+    "kg_sos_strong_win_pct", "kg_sos_strong_margin", "kg_sos_margin_dropoff",
+    "kg_sos_strong_to_margin", "kg_sos_strong_reb_margin",
+    # Massey ordinals
+    "massey_POM", "massey_SAG", "massey_RPI", "massey_MOR",
+    "massey_WLK", "massey_DOL", "massey_COL",
+    # NET SOS (2021+, from nitty-gritty; NaN for 2003-2020)
+    "massey_SOS", "massey_NC_SOS",
+    # Seed
+    "seed_num",
+    # Derived
+    "consensus_rank", "rank_spread", "massey_PMW",
+]
+
+# Features from existing pipeline to merge (available 2005+ only, NaN before)
+ENRICHMENT_FEATURES = [
+    "net_rank", "kpi", "sor", "bpi",
+    "net_sos", "rpi_sos", "net_nc_sos",
+    "overall_win_pct", "road_win_pct", "nc_win_pct", "conf_win_pct",
+    "q1_win_pct", "resume_score",
+    "win_entropy", "cusum_peak",
+    "net_rank_yoy", "kpi_yoy", "sor_yoy",
+    "total_awards",
+]
+
+# Market features (2025-2026 only)
+ENRICHMENT_MARKET_FEATURES = [
+    "mkt_vwap", "mkt_ofi", "mkt_trade_count", "mkt_volatility",
+]
+
+GAME_LGBM_PARAMS = {
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "n_estimators": 500,
+    "learning_rate": 0.03,
+    "max_depth": 5,
+    "min_child_samples": 10,
+    "subsample": 0.8,
+    "colsample_bytree": 0.7,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "verbosity": -1,
+}
+
+# 2026 Final Four bracket (hardcoded from actual bracket)
+BRACKET_2026 = {
+    "semi1": ("Arizona", "Michigan"),
+    "semi2": ("Illinois", "Connecticut"),
+}
+
+# ── Phase 1B: Tournament path features ────────────────────────────────────────
+PATH_FEATURES = [
+    "path_games_played",    # 0–5 (0 = R1 game, no prior path)
+    "path_avg_margin",      # mean scoring margin in tournament so far
+    "path_worst_margin",    # closest game (min margin)
+    "path_best_margin",     # most dominant win (max margin)
+    "path_avg_opp_seed",    # mean seed of opponents faced (lower = harder path)
+    "path_best_opp_seed",   # best (lowest-numbered) seed beaten
+    "path_fg_pct",          # tournament FG% so far
+    "path_opp_fg_pct",      # opponents' FG% against this team
+    "path_ot_games",        # number of OT games (fatigue signal)
+    "path_momentum",        # last_game_margin - first_game_margin (positive = peaking)
+]

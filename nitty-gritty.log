@@ -1,0 +1,63 @@
+08:46:58 INFO     ========================================================================
+08:46:58 INFO     STEP 1  Load reference tables
+08:46:58 INFO     ========================================================================
+08:46:58 INFO     Seasons available : 42
+08:46:58 INFO     Name lookup size  : 1197
+08:46:58 INFO     ========================================================================
+08:46:58 INFO     STEP 2  Discover and parse nitty-gritty files
+08:46:58 INFO     ========================================================================
+08:46:58 INFO     Total files found : 582
+08:47:51 INFO     Files skipped: 0
+08:47:51 INFO     ========================================================================
+08:47:51 INFO     STEP 3  Mapping summary
+08:47:51 INFO     ========================================================================
+08:47:51 INFO     Team rows mapped OK        : 210542
+08:47:51 INFO     Team rows skipped (no name): 0
+08:47:51 INFO     Team rows unmapped         : 0
+08:47:51 INFO     ========================================================================
+08:47:51 INFO     STEP 4  Build output DataFrame
+08:47:51 INFO     ========================================================================
+08:47:52 INFO     Total rows to add  : 416866
+08:47:52 INFO     Systems            : ['NC_SOS', 'SOS']
+08:47:52 INFO     Season range       : 2021–2026
+08:47:52 INFO     DayNum range       : 26–154
+08:47:52 INFO     Per-season/system breakdown:
+ Season SystemName  rows
+   2021     NC_SOS 23701
+   2021        SOS 24941
+   2022     NC_SOS 35442
+   2022        SOS 35442
+   2023     NC_SOS 35211
+   2023        SOS 35211
+   2024     NC_SOS 38372
+   2024        SOS 38372
+   2025     NC_SOS 37492
+   2025        SOS 37492
+   2026     NC_SOS 37595
+   2026        SOS 37595
+08:47:52 INFO     Sample (10 rows):
+ Season  RankingDayNum SystemName  TeamID  OrdinalRank
+   2021             65     NC_SOS    1208          225
+   2021             76        SOS    1204          302
+   2023             72        SOS    1439          120
+   2023            129     NC_SOS    1192          343
+   2025             33     NC_SOS    1212           14
+   2025             84     NC_SOS    1266           12
+   2026             35        SOS    1351           23
+   2026            111        SOS    1225          282
+   2026            121        SOS    1455          117
+   2026            131        SOS    1129           81
+08:47:52 INFO     ========================================================================
+08:47:52 INFO     STEP 5  Check against existing MMasseyOrdinals
+08:47:52 INFO     ========================================================================
+08:47:53 INFO     Existing rows: 5865366
+08:47:53 INFO     Existing NC_SOS rows: 0
+08:47:53 INFO     Existing SOS rows: 0
+08:47:53 INFO     Rows after dedup: 416866  (removed 0 duplicates)
+08:47:53 INFO     ========================================================================
+08:47:53 INFO     STEP 6  Write to MMasseyOrdinals.csv
+08:47:53 INFO     ========================================================================
+08:48:02 INFO     Written: 6282232 total rows
+08:48:02 INFO     Verified NC_SOS: 207813 rows in file
+08:48:02 INFO     Verified SOS: 209053 rows in file
+08:48:02 INFO     Done.

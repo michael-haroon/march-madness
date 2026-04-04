@@ -1,3 +1,5 @@
+update readme: archived data are data that have been cleaned and added to kaggle data set; wanted improvements include a modulated name normalizer
+---
 # Potential Features for March Madness as tournament comes to a close
 
 Labels determine the task that the algorithm is going to learn. Examples:
@@ -180,7 +182,18 @@ march-madness
 │           └── ticker=KXMARMAD-26-*
 ├── team_sheets
 └── yearlys
-├── pipeline
-├── scripts
+├── feature_pipeline/         ← all ML code lives here
+│   ├── run_v2.py             ← ACTIVE entry point (game-level model)
+│   ├── run.py                ← legacy Final Four pipeline (not actively used)
+│   ├── game_model.py         ← build_team_season_features, build_game_pairs, train/predict
+│   ├── data_loader.py        ← load_all(), team sheets + Kaggle + market loading
+│   ├── feature_engineering.py← build_features(), feature group constants, PCA
+│   ├── feature_importance.py ← MDI, MDA, SFI, CFI, PurgedYearKFold
+│   ├── model.py              ← Bradley-Terry pairwise model (used by legacy run.py)
+│   ├── market_features.py    ← Kalshi microstructure VWAP/OFI/momentum features
+│   ├── name_resolver.py      ← team name ↔ Kaggle TeamID bidirectional lookup
+│   ├── season_utils.py       ← calendar date → (Season, DayNum) helpers
+│   └── config.py             ← feature lists, LGBM params, bracket config
+├── scripts/                  ← scrapers and data integrators (not part of ML pipeline)
 └── README.md
 ```

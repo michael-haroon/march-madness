@@ -1975,3 +1975,1463 @@
 2026-04-01 05:44:04,768 - INFO - Cleaning and saving: Final_2005_Team_Sheets
 2026-04-01 05:44:04,770 - WARNING - Reference CSV not found: /Users/michaelharoon/Projects/tasty/march-madness/data/team_sheets/Final_2005_Team_Sheets_Team_Sheets_Final.csv
 2026-04-01 05:44:04,772 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2005/Final_2005_Team_Sheets_Cleaned.csv
+2026-04-02 07:52:04,512 - INFO - Processing: data/raw/pdf/men/team_sheets/rpi_archive/2010/2010-03-14_Team_Sheets.pdf
+2026-04-02 07:52:59,507 - INFO - Processing: data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-06_Team_Sheets.pdf
+2026-04-02 07:54:35,626 - INFO - Found 485 PDF files to process.
+2026-04-02 07:54:35,628 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-01-27_Team_Sheets.pdf
+2026-04-02 07:54:35,629 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-03-17_Team_Sheets.pdf
+2026-04-02 07:54:35,684 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-03-10_Team_Sheets.pdf
+2026-04-02 07:54:35,693 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-02-03_Team_Sheets.pdf
+2026-04-02 07:54:35,810 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-01-20_Team_Sheets.pdf
+2026-04-02 07:54:35,826 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-04-15_Team_Sheets.pdf
+2026-04-02 07:54:35,846 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-02-24_Team_Sheets.pdf
+2026-04-02 07:54:35,861 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-01-13_Team_Sheets.pdf
+2026-04-02 07:54:35,958 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-02-10_Team_Sheets.pdf
+2026-04-02 07:54:36,143 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-03-03_Team_Sheets.pdf
+2026-04-02 07:54:36,181 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-01-06_Team_Sheets.pdf
+2026-04-02 07:54:36,424 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2013/2013-02-17_Team_Sheets.pdf
+2026-04-02 07:54:50,501 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-01-09_Team_Sheets.pdf
+2026-04-02 07:54:50,517 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-02-09_Team_Sheets.pdf
+2026-04-02 07:54:50,854 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-03-02_Team_Sheets.pdf
+2026-04-02 07:54:51,898 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-02-23_Team_Sheets.pdf
+2026-04-02 07:54:53,032 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-01-19_Team_Sheets.pdf
+2026-04-02 07:54:53,204 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-02-16_Team_Sheets.pdf
+2026-04-02 07:54:53,612 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-03-16_Team_Sheets.pdf
+2026-04-02 07:54:54,522 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-01-26_Team_Sheets.pdf
+2026-04-02 07:54:54,990 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-03-09_Team_Sheets.pdf
+2026-04-02 07:54:55,016 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-02-02_Team_Sheets.pdf
+2026-04-02 07:54:55,025 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-04-15_Team_Sheets.pdf
+2026-04-02 07:54:55,591 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-03-06_Team_Sheets.pdf
+2026-04-02 07:55:05,741 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2014/2014-01-12_Team_Sheets.pdf
+2026-04-02 07:55:08,051 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-05_Team_Sheets.pdf
+2026-04-02 07:55:09,998 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-21_Team_Sheets.pdf
+2026-04-02 07:55:10,610 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-14_Team_Sheets.pdf
+2026-04-02 07:55:10,716 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-29_Team_Sheets.pdf
+2026-04-02 07:55:10,766 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-30_Team_Sheets.pdf
+2026-04-02 07:55:12,781 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-07_Team_Sheets.pdf
+2026-04-02 07:55:13,253 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-13_Team_Sheets.pdf
+2026-04-02 07:55:13,643 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-26_Team_Sheets.pdf
+2026-04-02 07:55:14,383 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-21_Team_Sheets.pdf
+2026-04-02 07:55:15,238 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-11_Team_Sheets.pdf
+2026-04-02 07:55:18,210 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-08_Team_Sheets.pdf
+2026-04-02 07:55:20,638 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-05_Team_Sheets.pdf
+2026-04-02 07:55:26,690 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-02_Team_Sheets.pdf
+2026-04-02 07:55:28,298 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-06_Team_Sheets.pdf
+2026-04-02 07:55:28,301 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-12_Team_Sheets.pdf
+2026-04-02 07:55:28,778 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-28_Team_Sheets.pdf
+2026-04-02 07:55:29,297 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-15_Team_Sheets.pdf
+2026-04-02 07:55:30,814 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-20_Team_Sheets.pdf
+2026-04-02 07:55:32,045 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-10_Team_Sheets.pdf
+2026-04-02 07:55:34,530 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-27_Team_Sheets.pdf
+2026-04-02 07:55:34,864 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-03_Team_Sheets.pdf
+2026-04-02 07:55:35,860 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-09_Team_Sheets.pdf
+2026-04-02 07:55:37,616 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-04_Team_Sheets.pdf
+2026-04-02 07:55:38,287 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-20_Team_Sheets.pdf
+2026-04-02 07:55:44,464 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-28_Team_Sheets.pdf
+2026-04-02 07:55:44,478 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-12_Team_Sheets.pdf
+2026-04-02 07:55:48,306 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-31_Team_Sheets.pdf
+2026-04-02 07:55:48,433 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-01_Team_Sheets.pdf
+2026-04-02 07:55:49,974 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-10_Team_Sheets.pdf
+2026-04-02 07:55:49,975 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-17_Team_Sheets.pdf
+2026-04-02 07:55:52,579 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-04_Team_Sheets.pdf
+2026-04-02 07:55:52,953 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-09_Team_Sheets.pdf
+2026-04-02 07:55:53,731 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-01_Team_Sheets.pdf
+2026-04-02 07:55:55,620 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-12_Team_Sheets.pdf
+2026-04-02 07:55:55,747 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-06_Team_Sheets.pdf
+2026-04-02 07:55:57,093 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-22_Team_Sheets.pdf
+2026-04-02 07:56:01,105 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-25_Team_Sheets.pdf
+2026-04-02 07:56:03,243 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-18_Team_Sheets.pdf
+2026-04-02 07:56:05,459 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-25_Team_Sheets.pdf
+2026-04-02 07:56:05,465 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-22_Team_Sheets.pdf
+2026-04-02 07:56:07,251 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-15_Team_Sheets.pdf
+2026-04-02 07:56:08,436 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-18_Team_Sheets.pdf
+2026-04-02 07:56:11,321 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-06_Team_Sheets.pdf
+2026-04-02 07:56:11,788 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-03_Team_Sheets.pdf
+2026-04-02 07:56:11,850 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-09_Team_Sheets.pdf
+2026-04-02 07:56:14,167 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-17_Team_Sheets.pdf
+2026-04-02 07:56:14,302 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-10_Team_Sheets.pdf
+2026-04-02 07:56:16,836 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-24_Team_Sheets.pdf
+2026-04-02 07:56:20,487 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-14_Team_Sheets.pdf
+2026-04-02 07:56:21,822 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-19_Team_Sheets.pdf
+2026-04-02 07:56:22,228 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-07_Team_Sheets.pdf
+2026-04-02 07:56:23,796 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-08_Team_Sheets.pdf
+2026-04-02 07:56:25,229 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-02_Team_Sheets.pdf
+2026-04-02 07:56:29,658 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-16_Team_Sheets.pdf
+2026-04-02 07:56:29,865 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-04-06_Team_Sheets.pdf
+2026-04-02 07:56:30,470 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-11_Team_Sheets.pdf
+2026-04-02 07:56:31,184 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-16_Team_Sheets.pdf
+2026-04-02 07:56:31,817 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-11_Team_Sheets.pdf
+2026-04-02 07:56:32,892 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-05_Team_Sheets.pdf
+2026-04-02 07:56:34,101 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-08_Team_Sheets.pdf
+2026-04-02 07:56:37,293 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-07_Team_Sheets.pdf
+2026-04-02 07:56:40,958 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-24_Team_Sheets.pdf
+2026-04-02 07:56:41,740 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-03-13_Team_Sheets.pdf
+2026-04-02 07:56:41,822 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-02-19_Team_Sheets.pdf
+2026-04-02 07:56:45,733 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2015/2015-01-23_Team_Sheets.pdf
+2026-04-02 07:56:45,879 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-01-08_Team_Sheets.pdf
+2026-04-02 07:56:47,487 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-02-19_Team_Sheets.pdf
+2026-04-02 07:56:48,991 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-01-01_Team_Sheets.pdf
+2026-04-02 07:56:50,312 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-04_Team_Sheets.pdf
+2026-04-02 07:56:51,237 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-01-22_Team_Sheets.pdf
+2026-04-02 07:56:52,670 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-01-15_Team_Sheets.pdf
+2026-04-02 07:56:53,825 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-06_Team_Sheets.pdf
+2026-04-02 07:56:53,936 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-02-12_Team_Sheets.pdf
+2026-04-02 07:57:00,451 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-09_Team_Sheets.pdf
+2026-04-02 07:57:01,826 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-10_Team_Sheets.pdf
+2026-04-02 07:57:01,880 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-07_Team_Sheets.pdf
+2026-04-02 07:57:02,270 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-08_Team_Sheets.pdf
+2026-04-02 07:57:03,249 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-04-15_Team_Sheets.pdf
+2026-04-02 07:57:07,063 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-02-26_Team_Sheets.pdf
+2026-04-02 07:57:07,097 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-03-11_Team_Sheets.pdf
+2026-04-02 07:57:08,207 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-02-05_Team_Sheets.pdf
+2026-04-02 07:57:08,510 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2012/2012-01-29_Team_Sheets.pdf
+2026-04-02 07:57:10,493 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2008/2008-03-15_Team_Sheets.pdf
+2026-04-02 07:57:12,361 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2008/2008-04-15_Team_Sheets.pdf
+2026-04-02 07:57:13,529 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2006/2006-03-12_Team_Sheets.pdf
+2026-04-02 07:57:20,784 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2006/2006-04-15_Team_Sheets.pdf
+2026-04-02 07:57:21,393 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2007/2007-04-15_Team_Sheets.pdf
+2026-04-02 07:57:22,297 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2009/2009-04-15_Team_Sheets.pdf
+2026-04-02 07:57:23,473 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2009/2009-03-15_Team_Sheets.pdf
+2026-04-02 07:57:24,690 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-14_Team_Sheets.pdf
+2026-04-02 07:57:25,195 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-04-03_Team_Sheets.pdf
+2026-04-02 07:57:26,309 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-13_Team_Sheets.pdf
+2026-04-02 07:57:26,743 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-07_Team_Sheets.pdf
+2026-04-02 07:57:26,987 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-08_Team_Sheets.pdf
+2026-04-02 07:57:38,689 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-02_Team_Sheets.pdf
+2026-04-02 07:57:39,196 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-26_Team_Sheets.pdf
+2026-04-02 07:57:39,224 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-21_Team_Sheets.pdf
+2026-04-02 07:57:42,603 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-26_Team_Sheets.pdf
+2026-04-02 07:57:44,853 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-21_Team_Sheets.pdf
+2026-04-02 07:57:47,463 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-18_Team_Sheets.pdf
+2026-04-02 07:57:47,530 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-05_Team_Sheets.pdf
+2026-04-02 07:57:47,602 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-30_Team_Sheets.pdf
+2026-04-02 07:57:47,700 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-02_Team_Sheets.pdf
+2026-04-02 07:57:47,813 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-14_Team_Sheets.pdf
+2026-04-02 07:57:51,612 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-29_Team_Sheets.pdf
+2026-04-02 07:57:53,313 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-13_Team_Sheets.pdf
+2026-04-02 07:57:55,421 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-20_Team_Sheets.pdf
+2026-04-02 07:57:55,824 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-27_Team_Sheets.pdf
+2026-04-02 07:57:58,423 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-17_Team_Sheets.pdf
+2026-04-02 07:57:59,294 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-03_Team_Sheets.pdf
+2026-04-02 07:58:01,279 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-19_Team_Sheets.pdf
+2026-04-02 07:58:03,487 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-01_Team_Sheets.pdf
+2026-04-02 07:58:03,651 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-04_Team_Sheets.pdf
+2026-04-02 07:58:04,134 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-31_Team_Sheets.pdf
+2026-04-02 07:58:05,460 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-15_Team_Sheets.pdf
+2026-04-02 07:58:05,489 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-12_Team_Sheets.pdf
+2026-04-02 07:58:10,057 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-28_Team_Sheets.pdf
+2026-04-02 07:58:13,148 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-12_Team_Sheets.pdf
+2026-04-02 07:58:13,204 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-15_Team_Sheets.pdf
+2026-04-02 07:58:13,847 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-28_Team_Sheets.pdf
+2026-04-02 07:58:14,663 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-06_Team_Sheets.pdf
+2026-04-02 07:58:15,891 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-03_Team_Sheets.pdf
+2026-04-02 07:58:18,838 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-04_Team_Sheets.pdf
+2026-04-02 07:58:20,392 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-09_Team_Sheets.pdf
+2026-04-02 07:58:23,131 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-10_Team_Sheets.pdf
+2026-04-02 07:58:23,964 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-20_Team_Sheets.pdf
+2026-04-02 07:58:24,969 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-27_Team_Sheets.pdf
+2026-04-02 07:58:25,925 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-06_Team_Sheets.pdf
+2026-04-02 07:58:28,799 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-22_Team_Sheets.pdf
+2026-04-02 07:58:29,086 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-18_Team_Sheets.pdf
+2026-04-02 07:58:33,303 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-25_Team_Sheets.pdf
+2026-04-02 07:58:33,418 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-10_Team_Sheets.pdf
+2026-04-02 07:58:34,365 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-17_Team_Sheets.pdf
+2026-04-02 07:58:35,188 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-03_Team_Sheets.pdf
+2026-04-02 07:58:35,740 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-09_Team_Sheets.pdf
+2026-04-02 07:58:41,002 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-29_Team_Sheets.pdf
+2026-04-02 07:58:42,511 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-09_Team_Sheets.pdf
+2026-04-02 07:58:43,445 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-04_Team_Sheets.pdf
+2026-04-02 07:58:44,360 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-10_Team_Sheets.pdf
+2026-04-02 07:58:44,463 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-12_Team_Sheets.pdf
+2026-04-02 07:58:46,067 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-05_Team_Sheets.pdf
+2026-04-02 07:58:47,054 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-18_Team_Sheets.pdf
+2026-04-02 07:58:50,191 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-25_Team_Sheets.pdf
+2026-04-02 07:58:51,202 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-01_Team_Sheets.pdf
+2026-04-02 07:58:52,006 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-21_Team_Sheets.pdf
+2026-04-02 07:58:55,123 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-05_Team_Sheets.pdf
+2026-04-02 07:58:55,293 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-16_Team_Sheets.pdf
+2026-04-02 07:58:55,507 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-11_Team_Sheets.pdf
+2026-04-02 07:58:57,184 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-19_Team_Sheets.pdf
+2026-04-02 07:59:00,377 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-24_Team_Sheets.pdf
+2026-04-02 07:59:01,116 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-07_Team_Sheets.pdf
+2026-04-02 07:59:03,595 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-20_Team_Sheets.pdf
+2026-04-02 07:59:05,599 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-07_Team_Sheets.pdf
+2026-04-02 07:59:06,845 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-19_Team_Sheets.pdf
+2026-04-02 07:59:09,462 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-23_Team_Sheets.pdf
+2026-04-02 07:59:09,551 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-24_Team_Sheets.pdf
+2026-04-02 07:59:09,880 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-01-16_Team_Sheets.pdf
+2026-04-02 07:59:11,815 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2016-12-31_Team_Sheets.pdf
+2026-04-02 07:59:14,949 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-11_Team_Sheets.pdf
+2026-04-02 07:59:16,794 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-03-02_Team_Sheets.pdf
+2026-04-02 07:59:17,093 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2017/2017-02-08_Team_Sheets.pdf
+2026-04-02 07:59:17,285 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2010/2010-03-14_Team_Sheets.pdf
+2026-04-02 07:59:17,890 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2010/2010-04-15_Team_Sheets.pdf
+2026-04-02 07:59:20,634 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-06_Team_Sheets.pdf
+2026-04-02 07:59:23,479 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-28_Team_Sheets.pdf
+2026-04-02 07:59:24,112 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-15_Team_Sheets.pdf
+2026-04-02 07:59:25,383 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-27_Team_Sheets.pdf
+2026-04-02 07:59:25,458 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-12_Team_Sheets.pdf
+2026-04-02 07:59:27,700 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-20_Team_Sheets.pdf
+2026-04-02 07:59:30,463 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-10_Team_Sheets.pdf
+2026-04-02 07:59:32,889 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-09_Team_Sheets.pdf
+2026-04-02 07:59:35,061 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-03_Team_Sheets.pdf
+2026-04-02 07:59:36,974 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-04_Team_Sheets.pdf
+2026-04-02 07:59:43,789 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-17_Team_Sheets.pdf
+2026-04-02 07:59:44,332 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-27_Team_Sheets.pdf
+2026-04-02 07:59:45,631 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-20_Team_Sheets.pdf
+2026-04-02 07:59:50,304 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-28_Team_Sheets.pdf
+2026-04-02 07:59:51,049 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-15_Team_Sheets.pdf
+2026-04-02 07:59:52,249 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-12_Team_Sheets.pdf
+2026-04-02 07:59:53,429 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-31_Team_Sheets.pdf
+2026-04-02 07:59:55,051 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-01_Team_Sheets.pdf
+2026-04-02 07:59:58,245 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-21_Team_Sheets.pdf
+2026-04-02 08:00:00,577 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-16_Team_Sheets.pdf
+2026-04-02 08:00:04,225 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-26_Team_Sheets.pdf
+2026-04-02 08:00:07,254 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-13_Team_Sheets.pdf
+2026-04-02 08:00:12,012 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-29_Team_Sheets.pdf
+2026-04-02 08:00:13,128 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-14_Team_Sheets.pdf
+2026-04-02 08:00:13,373 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-30_Team_Sheets.pdf
+2026-04-02 08:00:15,821 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-07_Team_Sheets.pdf
+2026-04-02 08:00:16,012 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-13_Team_Sheets.pdf
+2026-04-02 08:00:18,515 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-14_Team_Sheets.pdf
+2026-04-02 08:00:23,042 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-21_Team_Sheets.pdf
+2026-04-02 08:00:25,235 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-11_Team_Sheets.pdf
+2026-04-02 08:00:28,034 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-26_Team_Sheets.pdf
+2026-04-02 08:00:30,097 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-08_Team_Sheets.pdf
+2026-04-02 08:00:31,810 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-23_Team_Sheets.pdf
+2026-04-02 08:00:31,895 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-24_Team_Sheets.pdf
+2026-04-02 08:00:33,141 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-19_Team_Sheets.pdf
+2026-04-02 08:00:33,180 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-14_Team_Sheets.pdf
+2026-04-02 08:00:36,470 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-07_Team_Sheets.pdf
+2026-04-02 08:00:41,164 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-02_Team_Sheets.pdf
+2026-04-02 08:00:43,834 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-08_Team_Sheets.pdf
+2026-04-02 08:00:46,542 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-11_Team_Sheets.pdf
+2026-04-02 08:00:47,136 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-16_Team_Sheets.pdf
+2026-04-02 08:00:52,089 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-11_Team_Sheets.pdf
+2026-04-02 08:00:57,508 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-05_Team_Sheets.pdf
+2026-04-02 08:00:58,962 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-08_Team_Sheets.pdf
+2026-04-02 08:00:59,084 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-07_Team_Sheets.pdf
+2026-04-02 08:01:00,503 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-13_Team_Sheets.pdf
+2026-04-02 08:01:02,791 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-23_Team_Sheets.pdf
+2026-04-02 08:01:04,853 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-24_Team_Sheets.pdf
+2026-04-02 08:01:07,957 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-19_Team_Sheets.pdf
+2026-04-02 08:01:08,917 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-17_Team_Sheets.pdf
+2026-04-02 08:01:13,109 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-10_Team_Sheets.pdf
+2026-04-02 08:01:13,579 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-04_Team_Sheets.pdf
+2026-04-02 08:01:15,980 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-09_Team_Sheets.pdf
+2026-04-02 08:01:16,341 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-06_Team_Sheets.pdf
+2026-04-02 08:01:16,432 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-01_Team_Sheets.pdf
+2026-04-02 08:01:18,499 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-25_Team_Sheets.pdf
+2026-04-02 08:01:28,045 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-18_Team_Sheets.pdf
+2026-04-02 08:01:29,595 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-12_Team_Sheets.pdf
+2026-04-02 08:01:30,405 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-04-08_Team_Sheets.pdf
+2026-04-02 08:01:30,450 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-22_Team_Sheets.pdf
+2026-04-02 08:01:31,150 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-15_Team_Sheets.pdf
+2026-04-02 08:01:31,390 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-18_Team_Sheets.pdf
+2026-04-02 08:01:34,663 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-22_Team_Sheets.pdf
+2026-04-02 08:01:35,022 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-06_Team_Sheets.pdf
+2026-04-02 08:01:35,277 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-02-09_Team_Sheets.pdf
+2026-04-02 08:01:37,402 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-03-03_Team_Sheets.pdf
+2026-04-02 08:01:40,911 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2019/2019-01-17_Team_Sheets.pdf
+2026-04-02 08:01:47,370 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-07_Team_Sheets.pdf
+2026-04-02 08:01:55,428 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-15_Team_Sheets.pdf
+2026-04-02 08:01:55,547 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-28_Team_Sheets.pdf
+2026-04-02 08:01:55,876 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-19_Team_Sheets.pdf
+2026-04-02 08:01:56,013 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-24_Team_Sheets.pdf
+2026-04-02 08:01:56,811 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-31_Team_Sheets.pdf
+2026-04-02 08:01:58,384 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-23_Team_Sheets.pdf
+2026-04-02 08:01:59,499 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-16_Team_Sheets.pdf
+2026-04-02 08:02:00,681 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-11_Team_Sheets.pdf
+2026-04-02 08:02:00,813 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-27_Team_Sheets.pdf
+2026-04-02 08:02:01,096 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-08_Team_Sheets.pdf
+2026-04-02 08:02:04,813 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-05_Team_Sheets.pdf
+2026-04-02 08:02:13,615 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-08_Team_Sheets.pdf
+2026-04-02 08:02:19,658 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-02_Team_Sheets.pdf
+2026-04-02 08:02:19,797 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-20_Team_Sheets.pdf
+2026-04-02 08:02:20,270 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-16_Team_Sheets.pdf
+2026-04-02 08:02:22,026 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-11_Team_Sheets.pdf
+2026-04-02 08:02:22,943 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-19_Team_Sheets.pdf
+2026-04-02 08:02:24,427 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-24_Team_Sheets.pdf
+2026-04-02 08:02:24,856 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-23_Team_Sheets.pdf
+2026-04-02 08:02:25,703 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-03_Team_Sheets.pdf
+2026-04-02 08:02:25,781 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-07_Team_Sheets.pdf
+2026-04-02 08:02:27,837 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-21_Team_Sheets.pdf
+2026-04-02 08:02:31,336 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-09_Team_Sheets.pdf
+2026-04-02 08:02:40,345 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-10_Team_Sheets.pdf
+2026-04-02 08:02:46,506 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-17_Team_Sheets.pdf
+2026-04-02 08:02:46,789 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-22_Team_Sheets.pdf
+2026-04-02 08:02:48,389 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-18_Team_Sheets.pdf
+2026-04-02 08:02:48,589 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-25_Team_Sheets.pdf
+2026-04-02 08:02:50,508 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-01_Team_Sheets.pdf
+2026-04-02 08:02:50,986 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-06_Team_Sheets.pdf
+2026-04-02 08:02:51,106 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-01_Team_Sheets.pdf
+2026-04-02 08:02:51,646 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-06_Team_Sheets.pdf
+2026-04-02 08:02:53,031 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-29_Team_Sheets.pdf
+2026-04-02 08:02:53,279 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-30_Team_Sheets.pdf
+2026-04-02 08:03:00,466 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-22_Team_Sheets.pdf
+2026-04-02 08:03:07,907 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-18_Team_Sheets.pdf
+2026-04-02 08:03:13,263 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-25_Team_Sheets.pdf
+2026-04-02 08:03:13,290 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-10_Team_Sheets.pdf
+2026-04-02 08:03:13,989 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-17_Team_Sheets.pdf
+2026-04-02 08:03:15,029 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-04_Team_Sheets.pdf
+2026-04-02 08:03:15,054 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-09_Team_Sheets.pdf
+2026-04-02 08:03:16,570 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-12_Team_Sheets.pdf
+2026-04-02 08:03:18,476 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-15_Team_Sheets.pdf
+2026-04-02 08:03:18,535 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-28_Team_Sheets.pdf
+2026-04-02 08:03:19,082 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-31_Team_Sheets.pdf
+2026-04-02 08:03:19,572 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-01_Team_Sheets.pdf
+2026-04-02 08:03:26,462 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-23_Team_Sheets.pdf
+2026-04-02 08:03:33,690 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-03_Team_Sheets.pdf
+2026-04-02 08:03:39,204 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-04_Team_Sheets.pdf
+2026-04-02 08:03:39,575 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-20_Team_Sheets.pdf
+2026-04-02 08:03:39,884 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-27_Team_Sheets.pdf
+2026-04-02 08:03:40,383 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-20_Team_Sheets.pdf
+2026-04-02 08:03:41,084 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-10_Team_Sheets.pdf
+2026-04-02 08:03:43,481 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-27_Team_Sheets.pdf
+2026-04-02 08:03:44,066 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-03_Team_Sheets.pdf
+2026-04-02 08:03:44,413 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-04_Team_Sheets.pdf
+2026-04-02 08:03:45,464 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-09_Team_Sheets.pdf
+2026-04-02 08:03:45,914 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-16_Team_Sheets.pdf
+2026-04-02 08:03:50,687 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-19_Team_Sheets.pdf
+2026-04-02 08:03:57,191 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-06_Team_Sheets.pdf
+2026-04-02 08:04:04,514 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-12_Team_Sheets.pdf
+2026-04-02 08:04:05,101 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-15_Team_Sheets.pdf
+2026-04-02 08:04:06,734 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-28_Team_Sheets.pdf
+2026-04-02 08:04:07,455 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-26_Team_Sheets.pdf
+2026-04-02 08:04:08,715 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-21_Team_Sheets.pdf
+2026-04-02 08:04:10,239 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-05_Team_Sheets.pdf
+2026-04-02 08:04:10,307 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-11_Team_Sheets.pdf
+2026-04-02 08:04:10,547 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-08_Team_Sheets.pdf
+2026-04-02 08:04:10,997 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-04-15_Team_Sheets.pdf
+2026-04-02 08:04:12,214 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-17_Team_Sheets.pdf
+2026-04-02 08:04:15,499 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-02_Team_Sheets.pdf
+2026-04-02 08:04:24,849 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-18_Team_Sheets.pdf
+2026-04-02 08:04:29,960 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-25_Team_Sheets.pdf
+2026-04-02 08:04:32,797 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-03-07_Team_Sheets.pdf
+2026-04-02 08:04:33,273 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-14_Team_Sheets.pdf
+2026-04-02 08:04:33,901 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-29_Team_Sheets.pdf
+2026-04-02 08:04:35,068 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-13_Team_Sheets.pdf
+2026-04-02 08:04:35,107 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-14_Team_Sheets.pdf
+2026-04-02 08:04:36,262 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-29_Team_Sheets.pdf
+2026-04-02 08:04:37,173 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-13_Team_Sheets.pdf
+2026-04-02 08:04:37,227 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-30_Team_Sheets.pdf
+2026-04-02 08:04:37,479 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2019-12-22_Team_Sheets.pdf
+2026-04-02 08:04:42,301 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-05_Team_Sheets.pdf
+2026-04-02 08:04:49,925 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-02_Team_Sheets.pdf
+2026-04-02 08:04:54,658 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-01-26_Team_Sheets.pdf
+2026-04-02 08:04:58,880 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2020/2020-02-21_Team_Sheets.pdf
+2026-04-02 08:04:59,795 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-08_Team_Sheets.pdf
+2026-04-02 08:05:00,368 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-02_Team_Sheets.pdf
+2026-04-02 08:05:00,401 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-16_Team_Sheets.pdf
+2026-04-02 08:05:00,907 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-11_Team_Sheets.pdf
+2026-04-02 08:05:01,870 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-24_Team_Sheets.pdf
+2026-04-02 08:05:02,703 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-19_Team_Sheets.pdf
+2026-04-02 08:05:02,957 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-23_Team_Sheets.pdf
+2026-04-02 08:05:03,687 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-07_Team_Sheets.pdf
+2026-04-02 08:05:10,433 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-19_Team_Sheets.pdf
+2026-04-02 08:05:15,996 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-16_Team_Sheets.pdf
+2026-04-02 08:05:19,996 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-05_Team_Sheets.pdf
+2026-04-02 08:05:20,803 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-01_Team_Sheets.pdf
+2026-04-02 08:05:20,895 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-22_Team_Sheets.pdf
+2026-04-02 08:05:21,988 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-18_Team_Sheets.pdf
+2026-04-02 08:05:22,095 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-25_Team_Sheets.pdf
+2026-04-02 08:05:22,368 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-17_Team_Sheets.pdf
+2026-04-02 08:05:25,292 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-03_Team_Sheets.pdf
+2026-04-02 08:05:25,319 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-04_Team_Sheets.pdf
+2026-04-02 08:05:25,799 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-09_Team_Sheets.pdf
+2026-04-02 08:05:26,775 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-10_Team_Sheets.pdf
+2026-04-02 08:05:31,855 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-17_Team_Sheets.pdf
+2026-04-02 08:05:35,898 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-22_Team_Sheets.pdf
+2026-04-02 08:05:39,789 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-25_Team_Sheets.pdf
+2026-04-02 08:05:41,205 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-18_Team_Sheets.pdf
+2026-04-02 08:05:43,075 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2017-12-03_Team_Sheets.pdf
+2026-04-02 08:05:44,498 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-06_Team_Sheets.pdf
+2026-04-02 08:05:45,131 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-20_Team_Sheets.pdf
+2026-04-02 08:05:46,136 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-10_Team_Sheets.pdf
+2026-04-02 08:05:46,198 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-27_Team_Sheets.pdf
+2026-04-02 08:05:48,424 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-03_Team_Sheets.pdf
+2026-04-02 08:05:50,068 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-09_Team_Sheets.pdf
+2026-04-02 08:05:50,963 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-06_Team_Sheets.pdf
+2026-04-02 08:05:51,532 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-28_Team_Sheets.pdf
+2026-04-02 08:05:56,471 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-15_Team_Sheets.pdf
+2026-04-02 08:05:58,684 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-12_Team_Sheets.pdf
+2026-04-02 08:05:59,040 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-28_Team_Sheets.pdf
+2026-04-02 08:06:00,368 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-15_Team_Sheets.pdf
+2026-04-02 08:06:03,694 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-31_Team_Sheets.pdf
+2026-04-02 08:06:05,020 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-01_Team_Sheets.pdf
+2026-04-02 08:06:08,126 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-04_Team_Sheets.pdf
+2026-04-02 08:06:09,113 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-20_Team_Sheets.pdf
+2026-04-02 08:06:10,507 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-27_Team_Sheets.pdf
+2026-04-02 08:06:14,785 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-29_Team_Sheets.pdf
+2026-04-02 08:06:15,142 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-13_Team_Sheets.pdf
+2026-04-02 08:06:16,445 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-05_Team_Sheets.pdf
+2026-04-02 08:06:16,585 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-26_Team_Sheets.pdf
+2026-04-02 08:06:19,464 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-21_Team_Sheets.pdf
+2026-04-02 08:06:20,128 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-26_Team_Sheets.pdf
+2026-04-02 08:06:21,752 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-01-21_Team_Sheets.pdf
+2026-04-02 08:06:23,690 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-11_Team_Sheets.pdf
+2026-04-02 08:06:29,412 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-04-15_Team_Sheets.pdf
+2026-04-02 08:06:30,352 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-08_Team_Sheets.pdf
+2026-04-02 08:06:30,717 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-02_Team_Sheets.pdf
+2026-04-02 08:06:32,720 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-03-07_Team_Sheets.pdf
+2026-04-02 08:06:34,001 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2018/2018-02-14_Team_Sheets.pdf
+2026-04-02 08:06:36,830 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2011/2011-04-15_Team_Sheets.pdf
+2026-04-02 08:06:36,978 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2011/2011-03-13_Team_Sheets.pdf
+2026-04-02 08:06:37,659 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-17_Team_Sheets.pdf
+2026-04-02 08:06:40,875 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-10_Team_Sheets.pdf
+2026-04-02 08:06:42,718 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-09_Team_Sheets.pdf
+2026-04-02 08:06:42,774 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-21_Team_Sheets.pdf
+2026-04-02 08:06:49,947 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-03_Team_Sheets.pdf
+2026-04-02 08:06:52,232 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-06_Team_Sheets.pdf
+2026-04-02 08:06:53,720 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-01_Team_Sheets.pdf
+2026-04-02 08:06:54,247 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-11-30_Team_Sheets.pdf
+2026-04-02 08:06:54,577 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-18_Team_Sheets.pdf
+2026-04-02 08:06:56,770 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-25_Team_Sheets.pdf
+2026-04-02 08:06:57,933 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-22_Team_Sheets.pdf
+2026-04-02 08:06:58,237 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-18_Team_Sheets.pdf
+2026-04-02 08:06:59,477 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-14_Team_Sheets.pdf
+2026-04-02 08:07:00,806 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-25_Team_Sheets.pdf
+2026-04-02 08:07:01,006 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-29_Team_Sheets.pdf
+2026-04-02 08:07:01,139 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-22_Team_Sheets.pdf
+2026-04-02 08:07:07,283 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-12_Team_Sheets.pdf
+2026-04-02 08:07:08,275 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-01_Team_Sheets.pdf
+2026-04-02 08:07:09,414 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-09_Team_Sheets.pdf
+2026-04-02 08:07:10,673 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-04_Team_Sheets.pdf
+2026-04-02 08:07:11,613 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-02_Team_Sheets.pdf
+2026-04-02 08:07:13,287 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-26_Team_Sheets.pdf
+2026-04-02 08:07:14,748 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-17_Team_Sheets.pdf
+2026-04-02 08:07:15,878 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-23_Team_Sheets.pdf
+2026-04-02 08:07:15,997 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-13_Team_Sheets.pdf
+2026-04-02 08:07:16,645 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-24_Team_Sheets.pdf
+2026-04-02 08:07:17,378 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-03_Team_Sheets.pdf
+2026-04-02 08:07:20,924 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-05_Team_Sheets.pdf
+2026-04-02 08:07:25,179 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-27_Team_Sheets.pdf
+2026-04-02 08:07:25,271 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-16_Team_Sheets.pdf
+2026-04-02 08:07:26,627 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-11_Team_Sheets.pdf
+2026-04-02 08:07:27,256 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-16_Team_Sheets.pdf
+2026-04-02 08:07:27,688 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-02_Team_Sheets.pdf
+2026-04-02 08:07:31,073 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-04_Team_Sheets.pdf
+2026-04-02 08:07:31,182 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-08_Team_Sheets.pdf
+2026-04-02 08:07:31,717 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-07_Team_Sheets.pdf
+2026-04-02 08:07:32,927 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-23_Team_Sheets.pdf
+2026-04-02 08:07:37,913 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-12_Team_Sheets.pdf
+2026-04-02 08:07:38,013 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-19_Team_Sheets.pdf
+2026-04-02 08:07:39,806 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-24_Team_Sheets.pdf
+2026-04-02 08:07:39,869 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-02_Team_Sheets.pdf
+2026-04-02 08:07:44,402 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-05_Team_Sheets.pdf
+2026-04-02 08:07:44,794 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-08_Team_Sheets.pdf
+2026-04-02 08:07:46,503 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-04-15_Team_Sheets.pdf
+2026-04-02 08:07:46,644 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-11_Team_Sheets.pdf
+2026-04-02 08:07:48,266 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-21_Team_Sheets.pdf
+2026-04-02 08:07:49,950 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-26_Team_Sheets.pdf
+2026-04-02 08:07:52,009 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-18_Team_Sheets.pdf
+2026-04-02 08:07:53,278 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-14_Team_Sheets.pdf
+2026-04-02 08:07:54,028 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-29_Team_Sheets.pdf
+2026-04-02 08:07:59,112 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-01_Team_Sheets.pdf
+2026-04-02 08:08:00,329 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-07_Team_Sheets.pdf
+2026-04-02 08:08:01,897 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-30_Team_Sheets.pdf
+2026-04-02 08:08:03,883 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-22_Team_Sheets.pdf
+2026-04-02 08:08:09,463 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-13_Team_Sheets.pdf
+2026-04-02 08:08:10,409 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-14_Team_Sheets.pdf
+2026-04-02 08:08:10,555 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-29_Team_Sheets.pdf
+2026-04-02 08:08:12,754 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-10_Team_Sheets.pdf
+2026-04-02 08:08:12,848 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-21_Team_Sheets.pdf
+2026-04-02 08:08:13,973 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-26_Team_Sheets.pdf
+2026-04-02 08:08:15,265 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-02_Team_Sheets.pdf
+2026-04-02 08:08:16,571 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-09_Team_Sheets.pdf
+2026-04-02 08:08:19,712 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-05_Team_Sheets.pdf
+2026-04-02 08:08:21,553 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-07_Team_Sheets.pdf
+2026-04-02 08:08:22,397 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-01_Team_Sheets.pdf
+2026-04-02 08:08:24,358 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-31_Team_Sheets.pdf
+2026-04-02 08:08:28,945 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-15_Team_Sheets.pdf
+2026-04-02 08:08:29,378 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-28_Team_Sheets.pdf
+2026-04-02 08:08:29,773 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-23_Team_Sheets.pdf
+2026-04-02 08:08:31,233 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-12_Team_Sheets.pdf
+2026-04-02 08:08:31,281 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-27_Team_Sheets.pdf
+2026-04-02 08:08:31,743 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-11_Team_Sheets.pdf
+2026-04-02 08:08:35,319 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-20_Team_Sheets.pdf
+2026-04-02 08:08:35,714 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-04_Team_Sheets.pdf
+2026-04-02 08:08:36,198 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-08_Team_Sheets.pdf
+2026-04-02 08:08:37,859 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-03_Team_Sheets.pdf
+2026-04-02 08:08:41,060 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-04_Team_Sheets.pdf
+2026-04-02 08:08:42,768 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-03_Team_Sheets.pdf
+2026-04-02 08:08:44,273 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-27_Team_Sheets.pdf
+2026-04-02 08:08:45,473 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-16_Team_Sheets.pdf
+2026-04-02 08:08:45,560 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-10_Team_Sheets.pdf
+2026-04-02 08:08:45,689 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-01-20_Team_Sheets.pdf
+2026-04-02 08:08:48,883 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-02-15_Team_Sheets.pdf
+2026-04-02 08:08:49,492 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2015-12-19_Team_Sheets.pdf
+2026-04-02 08:08:52,486 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2016/2016-03-06_Team_Sheets.pdf
+2026-04-02 08:08:53,776 - INFO - Processing: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/2005/2005-04-15_Team_Sheets.pdf
+2026-04-02 08:09:04,338 - INFO - Cleaning and saving: 2013-01-27_Team_Sheets
+2026-04-02 08:09:04,381 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,381 - INFO - Cleaning and saving: 2013-03-17_Team_Sheets
+2026-04-02 08:09:04,388 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-03-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,388 - INFO - Cleaning and saving: 2013-02-03_Team_Sheets
+2026-04-02 08:09:04,394 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,394 - INFO - Cleaning and saving: 2013-03-10_Team_Sheets
+2026-04-02 08:09:04,400 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,400 - INFO - Cleaning and saving: 2013-01-20_Team_Sheets
+2026-04-02 08:09:04,405 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,405 - INFO - Cleaning and saving: 2013-04-15_Team_Sheets
+2026-04-02 08:09:04,410 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,410 - INFO - Cleaning and saving: 2013-01-13_Team_Sheets
+2026-04-02 08:09:04,415 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-01-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,415 - INFO - Cleaning and saving: 2013-02-24_Team_Sheets
+2026-04-02 08:09:04,421 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,421 - INFO - Cleaning and saving: 2013-02-10_Team_Sheets
+2026-04-02 08:09:04,427 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,427 - INFO - Cleaning and saving: 2013-03-03_Team_Sheets
+2026-04-02 08:09:04,433 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,433 - INFO - Cleaning and saving: 2013-01-06_Team_Sheets
+2026-04-02 08:09:04,439 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-01-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,439 - INFO - Cleaning and saving: 2013-02-17_Team_Sheets
+2026-04-02 08:09:04,446 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2013/2013-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,446 - INFO - Cleaning and saving: 2014-01-09_Team_Sheets
+2026-04-02 08:09:04,453 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,453 - INFO - Cleaning and saving: 2014-02-09_Team_Sheets
+2026-04-02 08:09:04,459 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,459 - INFO - Cleaning and saving: 2014-03-02_Team_Sheets
+2026-04-02 08:09:04,465 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,465 - INFO - Cleaning and saving: 2014-02-23_Team_Sheets
+2026-04-02 08:09:04,470 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,470 - INFO - Cleaning and saving: 2014-01-19_Team_Sheets
+2026-04-02 08:09:04,476 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,476 - INFO - Cleaning and saving: 2014-02-16_Team_Sheets
+2026-04-02 08:09:04,481 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,481 - INFO - Cleaning and saving: 2014-03-16_Team_Sheets
+2026-04-02 08:09:04,488 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-03-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,488 - INFO - Cleaning and saving: 2014-01-26_Team_Sheets
+2026-04-02 08:09:04,495 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,495 - INFO - Cleaning and saving: 2014-02-02_Team_Sheets
+2026-04-02 08:09:04,504 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,504 - INFO - Cleaning and saving: 2014-04-15_Team_Sheets
+2026-04-02 08:09:04,512 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,512 - INFO - Cleaning and saving: 2014-03-09_Team_Sheets
+2026-04-02 08:09:04,519 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,519 - INFO - Cleaning and saving: 2014-03-06_Team_Sheets
+2026-04-02 08:09:04,525 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,525 - INFO - Cleaning and saving: 2014-01-12_Team_Sheets
+2026-04-02 08:09:04,531 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2014/2014-01-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,531 - INFO - Cleaning and saving: 2015-02-05_Team_Sheets
+2026-04-02 08:09:04,538 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,538 - INFO - Cleaning and saving: 2015-02-21_Team_Sheets
+2026-04-02 08:09:04,543 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,543 - INFO - Cleaning and saving: 2015-01-29_Team_Sheets
+2026-04-02 08:09:04,546 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,546 - INFO - Cleaning and saving: 2015-01-14_Team_Sheets
+2026-04-02 08:09:04,549 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,549 - INFO - Cleaning and saving: 2015-01-30_Team_Sheets
+2026-04-02 08:09:04,554 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,554 - INFO - Cleaning and saving: 2015-03-07_Team_Sheets
+2026-04-02 08:09:04,559 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,559 - INFO - Cleaning and saving: 2015-01-13_Team_Sheets
+2026-04-02 08:09:04,563 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,563 - INFO - Cleaning and saving: 2015-02-26_Team_Sheets
+2026-04-02 08:09:04,566 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,566 - INFO - Cleaning and saving: 2015-01-21_Team_Sheets
+2026-04-02 08:09:04,569 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,570 - INFO - Cleaning and saving: 2015-03-11_Team_Sheets
+2026-04-02 08:09:04,574 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,574 - INFO - Cleaning and saving: 2015-03-08_Team_Sheets
+2026-04-02 08:09:04,579 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,579 - INFO - Cleaning and saving: 2015-01-05_Team_Sheets
+2026-04-02 08:09:04,583 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,583 - INFO - Cleaning and saving: 2015-02-02_Team_Sheets
+2026-04-02 08:09:04,588 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,589 - INFO - Cleaning and saving: 2015-03-06_Team_Sheets
+2026-04-02 08:09:04,594 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,594 - INFO - Cleaning and saving: 2015-01-12_Team_Sheets
+2026-04-02 08:09:04,599 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,599 - INFO - Cleaning and saving: 2015-02-28_Team_Sheets
+2026-04-02 08:09:04,606 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,606 - INFO - Cleaning and saving: 2015-02-15_Team_Sheets
+2026-04-02 08:09:04,609 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,609 - INFO - Cleaning and saving: 2015-01-20_Team_Sheets
+2026-04-02 08:09:04,613 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,613 - INFO - Cleaning and saving: 2015-03-10_Team_Sheets
+2026-04-02 08:09:04,618 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,619 - INFO - Cleaning and saving: 2015-02-27_Team_Sheets
+2026-04-02 08:09:04,623 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,623 - INFO - Cleaning and saving: 2015-02-03_Team_Sheets
+2026-04-02 08:09:04,627 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,627 - INFO - Cleaning and saving: 2015-03-09_Team_Sheets
+2026-04-02 08:09:04,631 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,631 - INFO - Cleaning and saving: 2015-01-04_Team_Sheets
+2026-04-02 08:09:04,635 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,635 - INFO - Cleaning and saving: 2015-02-20_Team_Sheets
+2026-04-02 08:09:04,638 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,638 - INFO - Cleaning and saving: 2015-02-12_Team_Sheets
+2026-04-02 08:09:04,642 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,642 - INFO - Cleaning and saving: 2015-01-28_Team_Sheets
+2026-04-02 08:09:04,645 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,645 - INFO - Cleaning and saving: 2015-01-31_Team_Sheets
+2026-04-02 08:09:04,649 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,649 - INFO - Cleaning and saving: 2015-03-01_Team_Sheets
+2026-04-02 08:09:04,653 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,653 - INFO - Cleaning and saving: 2015-01-10_Team_Sheets
+2026-04-02 08:09:04,657 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,657 - INFO - Cleaning and saving: 2015-02-17_Team_Sheets
+2026-04-02 08:09:04,660 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,660 - INFO - Cleaning and saving: 2015-03-04_Team_Sheets
+2026-04-02 08:09:04,664 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,664 - INFO - Cleaning and saving: 2015-01-09_Team_Sheets
+2026-04-02 08:09:04,668 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,668 - INFO - Cleaning and saving: 2015-02-01_Team_Sheets
+2026-04-02 08:09:04,671 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,671 - INFO - Cleaning and saving: 2015-01-06_Team_Sheets
+2026-04-02 08:09:04,674 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,674 - INFO - Cleaning and saving: 2015-03-12_Team_Sheets
+2026-04-02 08:09:04,678 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,678 - INFO - Cleaning and saving: 2015-01-22_Team_Sheets
+2026-04-02 08:09:04,681 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,681 - INFO - Cleaning and saving: 2015-02-25_Team_Sheets
+2026-04-02 08:09:04,686 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,686 - INFO - Cleaning and saving: 2015-02-18_Team_Sheets
+2026-04-02 08:09:04,690 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,690 - INFO - Cleaning and saving: 2015-02-22_Team_Sheets
+2026-04-02 08:09:04,694 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,695 - INFO - Cleaning and saving: 2015-01-25_Team_Sheets
+2026-04-02 08:09:04,698 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,698 - INFO - Cleaning and saving: 2015-03-15_Team_Sheets
+2026-04-02 08:09:04,702 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,702 - INFO - Cleaning and saving: 2015-01-18_Team_Sheets
+2026-04-02 08:09:04,705 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,705 - INFO - Cleaning and saving: 2015-02-06_Team_Sheets
+2026-04-02 08:09:04,708 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,708 - INFO - Cleaning and saving: 2015-03-03_Team_Sheets
+2026-04-02 08:09:04,712 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,712 - INFO - Cleaning and saving: 2015-02-09_Team_Sheets
+2026-04-02 08:09:04,715 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,715 - INFO - Cleaning and saving: 2015-02-10_Team_Sheets
+2026-04-02 08:09:04,720 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,720 - INFO - Cleaning and saving: 2015-01-17_Team_Sheets
+2026-04-02 08:09:04,723 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,723 - INFO - Cleaning and saving: 2015-01-24_Team_Sheets
+2026-04-02 08:09:04,727 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,727 - INFO - Cleaning and saving: 2015-03-14_Team_Sheets
+2026-04-02 08:09:04,734 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,734 - INFO - Cleaning and saving: 2015-01-19_Team_Sheets
+2026-04-02 08:09:04,737 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,737 - INFO - Cleaning and saving: 2015-02-07_Team_Sheets
+2026-04-02 08:09:04,740 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,740 - INFO - Cleaning and saving: 2015-02-08_Team_Sheets
+2026-04-02 08:09:04,743 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,743 - INFO - Cleaning and saving: 2015-03-02_Team_Sheets
+2026-04-02 08:09:04,747 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,747 - INFO - Cleaning and saving: 2015-01-16_Team_Sheets
+2026-04-02 08:09:04,751 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,751 - INFO - Cleaning and saving: 2015-04-06_Team_Sheets
+2026-04-02 08:09:04,755 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-04-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,755 - INFO - Cleaning and saving: 2015-02-11_Team_Sheets
+2026-04-02 08:09:04,761 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,761 - INFO - Cleaning and saving: 2015-02-16_Team_Sheets
+2026-04-02 08:09:04,765 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,765 - INFO - Cleaning and saving: 2015-01-11_Team_Sheets
+2026-04-02 08:09:04,769 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,769 - INFO - Cleaning and saving: 2015-03-05_Team_Sheets
+2026-04-02 08:09:04,773 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,774 - INFO - Cleaning and saving: 2015-01-08_Team_Sheets
+2026-04-02 08:09:04,777 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,777 - INFO - Cleaning and saving: 2015-01-07_Team_Sheets
+2026-04-02 08:09:04,780 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,781 - INFO - Cleaning and saving: 2015-02-24_Team_Sheets
+2026-04-02 08:09:04,785 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,785 - INFO - Cleaning and saving: 2015-02-19_Team_Sheets
+2026-04-02 08:09:04,789 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,789 - INFO - Cleaning and saving: 2015-03-13_Team_Sheets
+2026-04-02 08:09:04,792 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-03-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,792 - INFO - Cleaning and saving: 2015-01-23_Team_Sheets
+2026-04-02 08:09:04,795 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2015/2015-01-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,795 - INFO - Cleaning and saving: 2012-01-08_Team_Sheets
+2026-04-02 08:09:04,802 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-01-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,802 - INFO - Cleaning and saving: 2012-02-19_Team_Sheets
+2026-04-02 08:09:04,808 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,808 - INFO - Cleaning and saving: 2012-01-01_Team_Sheets
+2026-04-02 08:09:04,814 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-01-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,814 - INFO - Cleaning and saving: 2012-03-04_Team_Sheets
+2026-04-02 08:09:04,819 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,819 - INFO - Cleaning and saving: 2012-01-22_Team_Sheets
+2026-04-02 08:09:04,824 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,824 - INFO - Cleaning and saving: 2012-01-15_Team_Sheets
+2026-04-02 08:09:04,829 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,829 - INFO - Cleaning and saving: 2012-02-12_Team_Sheets
+2026-04-02 08:09:04,835 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,835 - INFO - Cleaning and saving: 2012-03-06_Team_Sheets
+2026-04-02 08:09:04,840 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,840 - INFO - Cleaning and saving: 2012-03-09_Team_Sheets
+2026-04-02 08:09:04,845 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,845 - INFO - Cleaning and saving: 2012-03-10_Team_Sheets
+2026-04-02 08:09:04,850 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,850 - INFO - Cleaning and saving: 2012-03-07_Team_Sheets
+2026-04-02 08:09:04,855 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,855 - INFO - Cleaning and saving: 2012-03-08_Team_Sheets
+2026-04-02 08:09:04,860 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,860 - INFO - Cleaning and saving: 2012-04-15_Team_Sheets
+2026-04-02 08:09:04,865 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,865 - INFO - Cleaning and saving: 2012-03-11_Team_Sheets
+2026-04-02 08:09:04,870 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,870 - INFO - Cleaning and saving: 2012-02-26_Team_Sheets
+2026-04-02 08:09:04,874 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,875 - INFO - Cleaning and saving: 2012-02-05_Team_Sheets
+2026-04-02 08:09:04,880 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,880 - INFO - Cleaning and saving: 2012-01-29_Team_Sheets
+2026-04-02 08:09:04,885 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2012/2012-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,885 - INFO - Cleaning and saving: 2008-03-15_Team_Sheets
+2026-04-02 08:09:04,895 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2008/2008-03-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,895 - INFO - Cleaning and saving: 2008-04-15_Team_Sheets
+2026-04-02 08:09:04,900 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2008/2008-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,900 - INFO - Cleaning and saving: 2006-03-12_Team_Sheets
+2026-04-02 08:09:04,909 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2006/2006-03-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,909 - INFO - Cleaning and saving: 2006-04-15_Team_Sheets
+2026-04-02 08:09:04,916 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2006/2006-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,916 - INFO - Cleaning and saving: 2007-04-15_Team_Sheets
+2026-04-02 08:09:04,922 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2007/2007-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,922 - INFO - Cleaning and saving: 2009-04-15_Team_Sheets
+2026-04-02 08:09:04,929 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2009/2009-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,929 - INFO - Cleaning and saving: 2009-03-15_Team_Sheets
+2026-04-02 08:09:04,935 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2009/2009-03-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,935 - INFO - Cleaning and saving: 2017-02-14_Team_Sheets
+2026-04-02 08:09:04,939 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,939 - INFO - Cleaning and saving: 2017-04-03_Team_Sheets
+2026-04-02 08:09:04,942 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-04-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,943 - INFO - Cleaning and saving: 2017-01-13_Team_Sheets
+2026-04-02 08:09:04,946 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,946 - INFO - Cleaning and saving: 2017-03-07_Team_Sheets
+2026-04-02 08:09:04,949 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,949 - INFO - Cleaning and saving: 2017-03-08_Team_Sheets
+2026-04-02 08:09:04,952 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,952 - INFO - Cleaning and saving: 2017-02-02_Team_Sheets
+2026-04-02 08:09:04,956 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,956 - INFO - Cleaning and saving: 2017-02-26_Team_Sheets
+2026-04-02 08:09:04,959 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,959 - INFO - Cleaning and saving: 2017-01-21_Team_Sheets
+2026-04-02 08:09:04,963 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,963 - INFO - Cleaning and saving: 2017-01-26_Team_Sheets
+2026-04-02 08:09:04,966 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,966 - INFO - Cleaning and saving: 2017-02-21_Team_Sheets
+2026-04-02 08:09:04,971 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,971 - INFO - Cleaning and saving: 2016-12-18_Team_Sheets
+2026-04-02 08:09:04,974 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,974 - INFO - Cleaning and saving: 2017-02-05_Team_Sheets
+2026-04-02 08:09:04,977 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,977 - INFO - Cleaning and saving: 2017-01-02_Team_Sheets
+2026-04-02 08:09:04,980 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,980 - INFO - Cleaning and saving: 2017-01-30_Team_Sheets
+2026-04-02 08:09:04,984 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,984 - INFO - Cleaning and saving: 2017-01-14_Team_Sheets
+2026-04-02 08:09:04,987 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,987 - INFO - Cleaning and saving: 2017-01-29_Team_Sheets
+2026-04-02 08:09:04,991 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,991 - INFO - Cleaning and saving: 2017-02-13_Team_Sheets
+2026-04-02 08:09:04,995 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:04,995 - INFO - Cleaning and saving: 2017-02-20_Team_Sheets
+2026-04-02 08:09:05,000 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,000 - INFO - Cleaning and saving: 2017-01-27_Team_Sheets
+2026-04-02 08:09:05,004 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,004 - INFO - Cleaning and saving: 2017-03-17_Team_Sheets
+2026-04-02 08:09:05,008 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,008 - INFO - Cleaning and saving: 2017-01-03_Team_Sheets
+2026-04-02 08:09:05,012 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,012 - INFO - Cleaning and saving: 2016-12-19_Team_Sheets
+2026-04-02 08:09:05,016 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,016 - INFO - Cleaning and saving: 2017-02-04_Team_Sheets
+2026-04-02 08:09:05,023 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,023 - INFO - Cleaning and saving: 2017-03-01_Team_Sheets
+2026-04-02 08:09:05,027 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,027 - INFO - Cleaning and saving: 2017-01-31_Team_Sheets
+2026-04-02 08:09:05,030 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,030 - INFO - Cleaning and saving: 2017-02-12_Team_Sheets
+2026-04-02 08:09:05,034 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,034 - INFO - Cleaning and saving: 2017-01-15_Team_Sheets
+2026-04-02 08:09:05,037 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,037 - INFO - Cleaning and saving: 2017-01-28_Team_Sheets
+2026-04-02 08:09:05,041 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,041 - INFO - Cleaning and saving: 2017-01-12_Team_Sheets
+2026-04-02 08:09:05,044 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,044 - INFO - Cleaning and saving: 2017-02-15_Team_Sheets
+2026-04-02 08:09:05,049 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,049 - INFO - Cleaning and saving: 2017-02-28_Team_Sheets
+2026-04-02 08:09:05,052 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,052 - INFO - Cleaning and saving: 2017-03-06_Team_Sheets
+2026-04-02 08:09:05,055 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,055 - INFO - Cleaning and saving: 2017-02-03_Team_Sheets
+2026-04-02 08:09:05,059 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,059 - INFO - Cleaning and saving: 2017-01-04_Team_Sheets
+2026-04-02 08:09:05,063 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,063 - INFO - Cleaning and saving: 2017-03-09_Team_Sheets
+2026-04-02 08:09:05,067 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,067 - INFO - Cleaning and saving: 2017-03-10_Team_Sheets
+2026-04-02 08:09:05,072 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,072 - INFO - Cleaning and saving: 2017-01-20_Team_Sheets
+2026-04-02 08:09:05,075 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,075 - INFO - Cleaning and saving: 2017-02-27_Team_Sheets
+2026-04-02 08:09:05,078 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,078 - INFO - Cleaning and saving: 2017-02-06_Team_Sheets
+2026-04-02 08:09:05,082 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,082 - INFO - Cleaning and saving: 2017-02-22_Team_Sheets
+2026-04-02 08:09:05,086 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,086 - INFO - Cleaning and saving: 2017-01-18_Team_Sheets
+2026-04-02 08:09:05,089 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,090 - INFO - Cleaning and saving: 2017-01-25_Team_Sheets
+2026-04-02 08:09:05,093 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,093 - INFO - Cleaning and saving: 2017-02-10_Team_Sheets
+2026-04-02 08:09:05,096 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,096 - INFO - Cleaning and saving: 2017-01-17_Team_Sheets
+2026-04-02 08:09:05,100 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,100 - INFO - Cleaning and saving: 2017-03-03_Team_Sheets
+2026-04-02 08:09:05,104 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,104 - INFO - Cleaning and saving: 2017-02-09_Team_Sheets
+2026-04-02 08:09:05,107 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,107 - INFO - Cleaning and saving: 2016-12-29_Team_Sheets
+2026-04-02 08:09:05,111 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,111 - INFO - Cleaning and saving: 2017-01-09_Team_Sheets
+2026-04-02 08:09:05,115 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,115 - INFO - Cleaning and saving: 2017-03-04_Team_Sheets
+2026-04-02 08:09:05,123 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,123 - INFO - Cleaning and saving: 2017-01-10_Team_Sheets
+2026-04-02 08:09:05,127 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,127 - INFO - Cleaning and saving: 2017-03-12_Team_Sheets
+2026-04-02 08:09:05,132 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,132 - INFO - Cleaning and saving: 2016-12-05_Team_Sheets
+2026-04-02 08:09:05,136 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,136 - INFO - Cleaning and saving: 2017-02-18_Team_Sheets
+2026-04-02 08:09:05,140 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,140 - INFO - Cleaning and saving: 2017-02-25_Team_Sheets
+2026-04-02 08:09:05,144 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,144 - INFO - Cleaning and saving: 2017-02-01_Team_Sheets
+2026-04-02 08:09:05,147 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,147 - INFO - Cleaning and saving: 2016-12-21_Team_Sheets
+2026-04-02 08:09:05,151 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,151 - INFO - Cleaning and saving: 2017-03-05_Team_Sheets
+2026-04-02 08:09:05,154 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,154 - INFO - Cleaning and saving: 2017-02-16_Team_Sheets
+2026-04-02 08:09:05,158 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,158 - INFO - Cleaning and saving: 2017-01-11_Team_Sheets
+2026-04-02 08:09:05,161 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,161 - INFO - Cleaning and saving: 2017-02-19_Team_Sheets
+2026-04-02 08:09:05,164 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,164 - INFO - Cleaning and saving: 2017-02-24_Team_Sheets
+2026-04-02 08:09:05,168 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,168 - INFO - Cleaning and saving: 2017-01-07_Team_Sheets
+2026-04-02 08:09:05,172 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,172 - INFO - Cleaning and saving: 2016-12-20_Team_Sheets
+2026-04-02 08:09:05,176 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,176 - INFO - Cleaning and saving: 2017-02-07_Team_Sheets
+2026-04-02 08:09:05,179 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,179 - INFO - Cleaning and saving: 2017-01-19_Team_Sheets
+2026-04-02 08:09:05,183 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,183 - INFO - Cleaning and saving: 2017-01-24_Team_Sheets
+2026-04-02 08:09:05,186 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,186 - INFO - Cleaning and saving: 2017-02-23_Team_Sheets
+2026-04-02 08:09:05,189 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,189 - INFO - Cleaning and saving: 2017-01-16_Team_Sheets
+2026-04-02 08:09:05,193 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,193 - INFO - Cleaning and saving: 2016-12-31_Team_Sheets
+2026-04-02 08:09:05,196 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2016-12-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,196 - INFO - Cleaning and saving: 2017-02-11_Team_Sheets
+2026-04-02 08:09:05,200 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,200 - INFO - Cleaning and saving: 2017-02-08_Team_Sheets
+2026-04-02 08:09:05,204 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,204 - INFO - Cleaning and saving: 2017-03-02_Team_Sheets
+2026-04-02 08:09:05,207 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2017/2017-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,207 - INFO - Cleaning and saving: 2010-03-14_Team_Sheets
+2026-04-02 08:09:05,214 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2010/2010-03-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,214 - INFO - Cleaning and saving: 2010-04-15_Team_Sheets
+2026-04-02 08:09:05,220 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2010/2010-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,220 - INFO - Cleaning and saving: 2019-03-06_Team_Sheets
+2026-04-02 08:09:05,224 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,224 - INFO - Cleaning and saving: 2019-02-28_Team_Sheets
+2026-04-02 08:09:05,229 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,230 - INFO - Cleaning and saving: 2019-02-15_Team_Sheets
+2026-04-02 08:09:05,235 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,235 - INFO - Cleaning and saving: 2019-01-12_Team_Sheets
+2026-04-02 08:09:05,239 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,239 - INFO - Cleaning and saving: 2019-02-27_Team_Sheets
+2026-04-02 08:09:05,244 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,244 - INFO - Cleaning and saving: 2019-01-20_Team_Sheets
+2026-04-02 08:09:05,248 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,248 - INFO - Cleaning and saving: 2019-03-10_Team_Sheets
+2026-04-02 08:09:05,253 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,253 - INFO - Cleaning and saving: 2019-03-09_Team_Sheets
+2026-04-02 08:09:05,258 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,258 - INFO - Cleaning and saving: 2019-02-03_Team_Sheets
+2026-04-02 08:09:05,262 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,262 - INFO - Cleaning and saving: 2019-02-04_Team_Sheets
+2026-04-02 08:09:05,267 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,267 - INFO - Cleaning and saving: 2019-03-17_Team_Sheets
+2026-04-02 08:09:05,271 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,271 - INFO - Cleaning and saving: 2019-01-27_Team_Sheets
+2026-04-02 08:09:05,275 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,275 - INFO - Cleaning and saving: 2019-02-20_Team_Sheets
+2026-04-02 08:09:05,280 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,280 - INFO - Cleaning and saving: 2019-01-28_Team_Sheets
+2026-04-02 08:09:05,284 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,285 - INFO - Cleaning and saving: 2019-01-15_Team_Sheets
+2026-04-02 08:09:05,288 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,288 - INFO - Cleaning and saving: 2019-02-12_Team_Sheets
+2026-04-02 08:09:05,294 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,294 - INFO - Cleaning and saving: 2019-01-31_Team_Sheets
+2026-04-02 08:09:05,298 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,298 - INFO - Cleaning and saving: 2019-03-01_Team_Sheets
+2026-04-02 08:09:05,302 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,302 - INFO - Cleaning and saving: 2019-02-21_Team_Sheets
+2026-04-02 08:09:05,308 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,308 - INFO - Cleaning and saving: 2019-03-16_Team_Sheets
+2026-04-02 08:09:05,313 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,313 - INFO - Cleaning and saving: 2019-01-26_Team_Sheets
+2026-04-02 08:09:05,317 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,317 - INFO - Cleaning and saving: 2019-02-13_Team_Sheets
+2026-04-02 08:09:05,321 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,321 - INFO - Cleaning and saving: 2019-01-29_Team_Sheets
+2026-04-02 08:09:05,327 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,327 - INFO - Cleaning and saving: 2019-01-14_Team_Sheets
+2026-04-02 08:09:05,331 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,331 - INFO - Cleaning and saving: 2019-01-30_Team_Sheets
+2026-04-02 08:09:05,335 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,335 - INFO - Cleaning and saving: 2019-03-07_Team_Sheets
+2026-04-02 08:09:05,340 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,340 - INFO - Cleaning and saving: 2019-01-13_Team_Sheets
+2026-04-02 08:09:05,343 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,343 - INFO - Cleaning and saving: 2019-02-14_Team_Sheets
+2026-04-02 08:09:05,348 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,348 - INFO - Cleaning and saving: 2019-01-21_Team_Sheets
+2026-04-02 08:09:05,351 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,351 - INFO - Cleaning and saving: 2019-03-11_Team_Sheets
+2026-04-02 08:09:05,355 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,355 - INFO - Cleaning and saving: 2019-02-26_Team_Sheets
+2026-04-02 08:09:05,360 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,360 - INFO - Cleaning and saving: 2019-03-08_Team_Sheets
+2026-04-02 08:09:05,364 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,364 - INFO - Cleaning and saving: 2019-02-23_Team_Sheets
+2026-04-02 08:09:05,368 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,368 - INFO - Cleaning and saving: 2019-01-24_Team_Sheets
+2026-04-02 08:09:05,372 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,372 - INFO - Cleaning and saving: 2019-03-14_Team_Sheets
+2026-04-02 08:09:05,376 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,376 - INFO - Cleaning and saving: 2019-01-19_Team_Sheets
+2026-04-02 08:09:05,379 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,379 - INFO - Cleaning and saving: 2019-02-07_Team_Sheets
+2026-04-02 08:09:05,383 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,383 - INFO - Cleaning and saving: 2019-03-02_Team_Sheets
+2026-04-02 08:09:05,387 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,387 - INFO - Cleaning and saving: 2019-02-08_Team_Sheets
+2026-04-02 08:09:05,391 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,391 - INFO - Cleaning and saving: 2019-02-11_Team_Sheets
+2026-04-02 08:09:05,395 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,396 - INFO - Cleaning and saving: 2019-01-16_Team_Sheets
+2026-04-02 08:09:05,399 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,399 - INFO - Cleaning and saving: 2019-01-11_Team_Sheets
+2026-04-02 08:09:05,402 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,402 - INFO - Cleaning and saving: 2019-03-05_Team_Sheets
+2026-04-02 08:09:05,407 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,407 - INFO - Cleaning and saving: 2019-01-08_Team_Sheets
+2026-04-02 08:09:05,410 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,411 - INFO - Cleaning and saving: 2019-01-07_Team_Sheets
+2026-04-02 08:09:05,414 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,414 - INFO - Cleaning and saving: 2019-03-13_Team_Sheets
+2026-04-02 08:09:05,418 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,418 - INFO - Cleaning and saving: 2019-01-23_Team_Sheets
+2026-04-02 08:09:05,422 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,422 - INFO - Cleaning and saving: 2019-02-24_Team_Sheets
+2026-04-02 08:09:05,429 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,429 - INFO - Cleaning and saving: 2019-02-19_Team_Sheets
+2026-04-02 08:09:05,434 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,434 - INFO - Cleaning and saving: 2019-02-17_Team_Sheets
+2026-04-02 08:09:05,438 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,438 - INFO - Cleaning and saving: 2019-01-10_Team_Sheets
+2026-04-02 08:09:05,443 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,443 - INFO - Cleaning and saving: 2019-03-04_Team_Sheets
+2026-04-02 08:09:05,448 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,448 - INFO - Cleaning and saving: 2019-01-09_Team_Sheets
+2026-04-02 08:09:05,452 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,452 - INFO - Cleaning and saving: 2019-01-06_Team_Sheets
+2026-04-02 08:09:05,455 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,455 - INFO - Cleaning and saving: 2019-02-01_Team_Sheets
+2026-04-02 08:09:05,459 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,459 - INFO - Cleaning and saving: 2019-02-25_Team_Sheets
+2026-04-02 08:09:05,465 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,466 - INFO - Cleaning and saving: 2019-02-18_Team_Sheets
+2026-04-02 08:09:05,473 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,473 - INFO - Cleaning and saving: 2019-03-12_Team_Sheets
+2026-04-02 08:09:05,478 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,478 - INFO - Cleaning and saving: 2019-01-22_Team_Sheets
+2026-04-02 08:09:05,482 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,482 - INFO - Cleaning and saving: 2019-04-08_Team_Sheets
+2026-04-02 08:09:05,486 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-04-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,486 - INFO - Cleaning and saving: 2019-03-15_Team_Sheets
+2026-04-02 08:09:05,490 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,490 - INFO - Cleaning and saving: 2019-01-18_Team_Sheets
+2026-04-02 08:09:05,494 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,494 - INFO - Cleaning and saving: 2019-02-22_Team_Sheets
+2026-04-02 08:09:05,498 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,498 - INFO - Cleaning and saving: 2019-02-06_Team_Sheets
+2026-04-02 08:09:05,502 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,502 - INFO - Cleaning and saving: 2019-02-09_Team_Sheets
+2026-04-02 08:09:05,506 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,507 - INFO - Cleaning and saving: 2019-03-03_Team_Sheets
+2026-04-02 08:09:05,512 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,512 - INFO - Cleaning and saving: 2019-01-17_Team_Sheets
+2026-04-02 08:09:05,515 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2019/2019-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,515 - INFO - Cleaning and saving: 2020-01-07_Team_Sheets
+2026-04-02 08:09:05,520 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,520 - INFO - Cleaning and saving: 2019-12-15_Team_Sheets
+2026-04-02 08:09:05,526 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,526 - INFO - Cleaning and saving: 2019-12-28_Team_Sheets
+2026-04-02 08:09:05,530 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,530 - INFO - Cleaning and saving: 2020-02-19_Team_Sheets
+2026-04-02 08:09:05,536 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,536 - INFO - Cleaning and saving: 2020-02-24_Team_Sheets
+2026-04-02 08:09:05,540 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,540 - INFO - Cleaning and saving: 2019-12-31_Team_Sheets
+2026-04-02 08:09:05,544 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,545 - INFO - Cleaning and saving: 2020-01-23_Team_Sheets
+2026-04-02 08:09:05,549 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,549 - INFO - Cleaning and saving: 2020-02-16_Team_Sheets
+2026-04-02 08:09:05,554 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,554 - INFO - Cleaning and saving: 2020-01-11_Team_Sheets
+2026-04-02 08:09:05,558 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,558 - INFO - Cleaning and saving: 2019-12-27_Team_Sheets
+2026-04-02 08:09:05,562 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,562 - INFO - Cleaning and saving: 2020-01-08_Team_Sheets
+2026-04-02 08:09:05,566 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,566 - INFO - Cleaning and saving: 2020-03-05_Team_Sheets
+2026-04-02 08:09:05,572 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,572 - INFO - Cleaning and saving: 2020-02-08_Team_Sheets
+2026-04-02 08:09:05,579 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,579 - INFO - Cleaning and saving: 2020-03-02_Team_Sheets
+2026-04-02 08:09:05,586 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,586 - INFO - Cleaning and saving: 2019-12-20_Team_Sheets
+2026-04-02 08:09:05,590 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,590 - INFO - Cleaning and saving: 2020-01-16_Team_Sheets
+2026-04-02 08:09:05,595 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,595 - INFO - Cleaning and saving: 2020-02-11_Team_Sheets
+2026-04-02 08:09:05,599 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,599 - INFO - Cleaning and saving: 2020-01-19_Team_Sheets
+2026-04-02 08:09:05,603 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,603 - INFO - Cleaning and saving: 2020-01-24_Team_Sheets
+2026-04-02 08:09:05,608 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,608 - INFO - Cleaning and saving: 2020-02-23_Team_Sheets
+2026-04-02 08:09:05,612 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,613 - INFO - Cleaning and saving: 2020-02-07_Team_Sheets
+2026-04-02 08:09:05,617 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,617 - INFO - Cleaning and saving: 2020-03-03_Team_Sheets
+2026-04-02 08:09:05,623 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,624 - INFO - Cleaning and saving: 2019-12-21_Team_Sheets
+2026-04-02 08:09:05,628 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,628 - INFO - Cleaning and saving: 2020-02-09_Team_Sheets
+2026-04-02 08:09:05,634 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,634 - INFO - Cleaning and saving: 2020-02-10_Team_Sheets
+2026-04-02 08:09:05,640 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,640 - INFO - Cleaning and saving: 2020-01-17_Team_Sheets
+2026-04-02 08:09:05,646 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,646 - INFO - Cleaning and saving: 2020-02-22_Team_Sheets
+2026-04-02 08:09:05,651 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,651 - INFO - Cleaning and saving: 2020-01-18_Team_Sheets
+2026-04-02 08:09:05,656 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,656 - INFO - Cleaning and saving: 2020-01-25_Team_Sheets
+2026-04-02 08:09:05,660 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,660 - INFO - Cleaning and saving: 2020-01-01_Team_Sheets
+2026-04-02 08:09:05,664 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,664 - INFO - Cleaning and saving: 2020-02-06_Team_Sheets
+2026-04-02 08:09:05,668 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,668 - INFO - Cleaning and saving: 2020-02-01_Team_Sheets
+2026-04-02 08:09:05,673 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,673 - INFO - Cleaning and saving: 2020-01-06_Team_Sheets
+2026-04-02 08:09:05,678 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,678 - INFO - Cleaning and saving: 2019-12-29_Team_Sheets
+2026-04-02 08:09:05,682 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,683 - INFO - Cleaning and saving: 2019-12-30_Team_Sheets
+2026-04-02 08:09:05,688 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,688 - INFO - Cleaning and saving: 2020-01-22_Team_Sheets
+2026-04-02 08:09:05,696 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,696 - INFO - Cleaning and saving: 2020-02-18_Team_Sheets
+2026-04-02 08:09:05,703 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,703 - INFO - Cleaning and saving: 2020-02-25_Team_Sheets
+2026-04-02 08:09:05,713 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,713 - INFO - Cleaning and saving: 2020-01-10_Team_Sheets
+2026-04-02 08:09:05,718 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,718 - INFO - Cleaning and saving: 2020-02-17_Team_Sheets
+2026-04-02 08:09:05,725 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,725 - INFO - Cleaning and saving: 2020-01-09_Team_Sheets
+2026-04-02 08:09:05,732 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,732 - INFO - Cleaning and saving: 2020-03-04_Team_Sheets
+2026-04-02 08:09:05,740 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,740 - INFO - Cleaning and saving: 2020-02-12_Team_Sheets
+2026-04-02 08:09:05,747 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,747 - INFO - Cleaning and saving: 2020-01-15_Team_Sheets
+2026-04-02 08:09:05,756 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,756 - INFO - Cleaning and saving: 2020-01-28_Team_Sheets
+2026-04-02 08:09:05,762 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,763 - INFO - Cleaning and saving: 2020-01-31_Team_Sheets
+2026-04-02 08:09:05,777 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,777 - INFO - Cleaning and saving: 2020-03-01_Team_Sheets
+2026-04-02 08:09:05,785 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,785 - INFO - Cleaning and saving: 2019-12-23_Team_Sheets
+2026-04-02 08:09:05,793 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,793 - INFO - Cleaning and saving: 2020-01-03_Team_Sheets
+2026-04-02 08:09:05,802 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,802 - INFO - Cleaning and saving: 2020-02-04_Team_Sheets
+2026-04-02 08:09:05,816 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,816 - INFO - Cleaning and saving: 2020-02-20_Team_Sheets
+2026-04-02 08:09:05,829 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,829 - INFO - Cleaning and saving: 2020-01-27_Team_Sheets
+2026-04-02 08:09:05,850 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,851 - INFO - Cleaning and saving: 2020-01-20_Team_Sheets
+2026-04-02 08:09:05,871 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,871 - INFO - Cleaning and saving: 2020-03-10_Team_Sheets
+2026-04-02 08:09:05,880 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,880 - INFO - Cleaning and saving: 2020-02-27_Team_Sheets
+2026-04-02 08:09:05,886 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,886 - INFO - Cleaning and saving: 2020-02-03_Team_Sheets
+2026-04-02 08:09:05,896 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,897 - INFO - Cleaning and saving: 2020-01-04_Team_Sheets
+2026-04-02 08:09:05,906 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,907 - INFO - Cleaning and saving: 2020-03-09_Team_Sheets
+2026-04-02 08:09:05,914 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,914 - INFO - Cleaning and saving: 2019-12-16_Team_Sheets
+2026-04-02 08:09:05,919 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,919 - INFO - Cleaning and saving: 2019-12-19_Team_Sheets
+2026-04-02 08:09:05,925 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,925 - INFO - Cleaning and saving: 2020-03-06_Team_Sheets
+2026-04-02 08:09:05,932 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,932 - INFO - Cleaning and saving: 2020-01-12_Team_Sheets
+2026-04-02 08:09:05,937 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,937 - INFO - Cleaning and saving: 2020-02-15_Team_Sheets
+2026-04-02 08:09:05,943 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,943 - INFO - Cleaning and saving: 2020-02-28_Team_Sheets
+2026-04-02 08:09:05,948 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,948 - INFO - Cleaning and saving: 2020-02-26_Team_Sheets
+2026-04-02 08:09:05,952 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,952 - INFO - Cleaning and saving: 2020-01-21_Team_Sheets
+2026-04-02 08:09:05,957 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,957 - INFO - Cleaning and saving: 2020-03-11_Team_Sheets
+2026-04-02 08:09:05,962 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,962 - INFO - Cleaning and saving: 2020-01-05_Team_Sheets
+2026-04-02 08:09:05,967 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,967 - INFO - Cleaning and saving: 2020-03-08_Team_Sheets
+2026-04-02 08:09:05,971 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,971 - INFO - Cleaning and saving: 2020-04-15_Team_Sheets
+2026-04-02 08:09:05,975 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,975 - INFO - Cleaning and saving: 2019-12-17_Team_Sheets
+2026-04-02 08:09:05,979 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,979 - INFO - Cleaning and saving: 2020-02-02_Team_Sheets
+2026-04-02 08:09:05,986 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,986 - INFO - Cleaning and saving: 2019-12-18_Team_Sheets
+2026-04-02 08:09:05,993 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,993 - INFO - Cleaning and saving: 2019-12-25_Team_Sheets
+2026-04-02 08:09:05,998 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:05,998 - INFO - Cleaning and saving: 2020-03-07_Team_Sheets
+2026-04-02 08:09:06,002 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,002 - INFO - Cleaning and saving: 2020-02-14_Team_Sheets
+2026-04-02 08:09:06,006 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,006 - INFO - Cleaning and saving: 2020-02-29_Team_Sheets
+2026-04-02 08:09:06,010 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,010 - INFO - Cleaning and saving: 2020-01-13_Team_Sheets
+2026-04-02 08:09:06,013 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,013 - INFO - Cleaning and saving: 2020-01-14_Team_Sheets
+2026-04-02 08:09:06,018 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,018 - INFO - Cleaning and saving: 2020-01-29_Team_Sheets
+2026-04-02 08:09:06,022 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,022 - INFO - Cleaning and saving: 2020-02-13_Team_Sheets
+2026-04-02 08:09:06,027 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,027 - INFO - Cleaning and saving: 2020-01-30_Team_Sheets
+2026-04-02 08:09:06,032 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,032 - INFO - Cleaning and saving: 2019-12-22_Team_Sheets
+2026-04-02 08:09:06,037 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2019-12-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,037 - INFO - Cleaning and saving: 2020-02-05_Team_Sheets
+2026-04-02 08:09:06,043 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,043 - INFO - Cleaning and saving: 2020-01-02_Team_Sheets
+2026-04-02 08:09:06,048 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,048 - INFO - Cleaning and saving: 2020-01-26_Team_Sheets
+2026-04-02 08:09:06,054 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,054 - INFO - Cleaning and saving: 2020-02-21_Team_Sheets
+2026-04-02 08:09:06,061 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2020/2020-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,061 - INFO - Cleaning and saving: 2018-02-08_Team_Sheets
+2026-04-02 08:09:06,066 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,066 - INFO - Cleaning and saving: 2018-03-02_Team_Sheets
+2026-04-02 08:09:06,074 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,074 - INFO - Cleaning and saving: 2018-01-16_Team_Sheets
+2026-04-02 08:09:06,081 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,081 - INFO - Cleaning and saving: 2018-02-11_Team_Sheets
+2026-04-02 08:09:06,085 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,085 - INFO - Cleaning and saving: 2018-01-24_Team_Sheets
+2026-04-02 08:09:06,090 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,090 - INFO - Cleaning and saving: 2018-01-19_Team_Sheets
+2026-04-02 08:09:06,095 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,095 - INFO - Cleaning and saving: 2018-02-23_Team_Sheets
+2026-04-02 08:09:06,102 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,102 - INFO - Cleaning and saving: 2018-02-07_Team_Sheets
+2026-04-02 08:09:06,109 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,109 - INFO - Cleaning and saving: 2018-02-19_Team_Sheets
+2026-04-02 08:09:06,115 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,115 - INFO - Cleaning and saving: 2018-02-16_Team_Sheets
+2026-04-02 08:09:06,122 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,122 - INFO - Cleaning and saving: 2018-03-05_Team_Sheets
+2026-04-02 08:09:06,129 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,130 - INFO - Cleaning and saving: 2018-02-01_Team_Sheets
+2026-04-02 08:09:06,138 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,138 - INFO - Cleaning and saving: 2018-01-22_Team_Sheets
+2026-04-02 08:09:06,145 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,146 - INFO - Cleaning and saving: 2018-02-25_Team_Sheets
+2026-04-02 08:09:06,150 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,150 - INFO - Cleaning and saving: 2018-02-18_Team_Sheets
+2026-04-02 08:09:06,160 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,160 - INFO - Cleaning and saving: 2018-02-17_Team_Sheets
+2026-04-02 08:09:06,165 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,165 - INFO - Cleaning and saving: 2018-03-04_Team_Sheets
+2026-04-02 08:09:06,172 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,172 - INFO - Cleaning and saving: 2018-03-03_Team_Sheets
+2026-04-02 08:09:06,178 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,178 - INFO - Cleaning and saving: 2018-02-09_Team_Sheets
+2026-04-02 08:09:06,185 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,185 - INFO - Cleaning and saving: 2018-02-10_Team_Sheets
+2026-04-02 08:09:06,192 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,192 - INFO - Cleaning and saving: 2018-01-17_Team_Sheets
+2026-04-02 08:09:06,198 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,199 - INFO - Cleaning and saving: 2018-02-22_Team_Sheets
+2026-04-02 08:09:06,206 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,207 - INFO - Cleaning and saving: 2018-01-25_Team_Sheets
+2026-04-02 08:09:06,214 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,214 - INFO - Cleaning and saving: 2018-01-18_Team_Sheets
+2026-04-02 08:09:06,219 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,219 - INFO - Cleaning and saving: 2017-12-03_Team_Sheets
+2026-04-02 08:09:06,223 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2017-12-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,223 - INFO - Cleaning and saving: 2018-02-06_Team_Sheets
+2026-04-02 08:09:06,228 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,228 - INFO - Cleaning and saving: 2018-01-20_Team_Sheets
+2026-04-02 08:09:06,233 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,233 - INFO - Cleaning and saving: 2018-03-10_Team_Sheets
+2026-04-02 08:09:06,237 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,237 - INFO - Cleaning and saving: 2018-02-27_Team_Sheets
+2026-04-02 08:09:06,241 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,241 - INFO - Cleaning and saving: 2018-02-03_Team_Sheets
+2026-04-02 08:09:06,245 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,245 - INFO - Cleaning and saving: 2018-03-09_Team_Sheets
+2026-04-02 08:09:06,250 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,250 - INFO - Cleaning and saving: 2018-03-06_Team_Sheets
+2026-04-02 08:09:06,255 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,255 - INFO - Cleaning and saving: 2018-02-28_Team_Sheets
+2026-04-02 08:09:06,259 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,259 - INFO - Cleaning and saving: 2018-02-15_Team_Sheets
+2026-04-02 08:09:06,267 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,267 - INFO - Cleaning and saving: 2018-02-12_Team_Sheets
+2026-04-02 08:09:06,272 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,272 - INFO - Cleaning and saving: 2018-01-28_Team_Sheets
+2026-04-02 08:09:06,277 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,277 - INFO - Cleaning and saving: 2018-01-15_Team_Sheets
+2026-04-02 08:09:06,281 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,281 - INFO - Cleaning and saving: 2018-01-31_Team_Sheets
+2026-04-02 08:09:06,286 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,286 - INFO - Cleaning and saving: 2018-03-01_Team_Sheets
+2026-04-02 08:09:06,291 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,291 - INFO - Cleaning and saving: 2018-02-04_Team_Sheets
+2026-04-02 08:09:06,295 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,295 - INFO - Cleaning and saving: 2018-02-20_Team_Sheets
+2026-04-02 08:09:06,300 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,300 - INFO - Cleaning and saving: 2018-01-27_Team_Sheets
+2026-04-02 08:09:06,304 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,304 - INFO - Cleaning and saving: 2018-01-29_Team_Sheets
+2026-04-02 08:09:06,308 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,308 - INFO - Cleaning and saving: 2018-02-13_Team_Sheets
+2026-04-02 08:09:06,314 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,314 - INFO - Cleaning and saving: 2018-02-05_Team_Sheets
+2026-04-02 08:09:06,318 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,318 - INFO - Cleaning and saving: 2018-01-26_Team_Sheets
+2026-04-02 08:09:06,322 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,322 - INFO - Cleaning and saving: 2018-02-21_Team_Sheets
+2026-04-02 08:09:06,326 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,326 - INFO - Cleaning and saving: 2018-02-26_Team_Sheets
+2026-04-02 08:09:06,331 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,331 - INFO - Cleaning and saving: 2018-01-21_Team_Sheets
+2026-04-02 08:09:06,335 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,335 - INFO - Cleaning and saving: 2018-03-11_Team_Sheets
+2026-04-02 08:09:06,344 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,344 - INFO - Cleaning and saving: 2018-04-15_Team_Sheets
+2026-04-02 08:09:06,349 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,349 - INFO - Cleaning and saving: 2018-03-08_Team_Sheets
+2026-04-02 08:09:06,353 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,353 - INFO - Cleaning and saving: 2018-02-02_Team_Sheets
+2026-04-02 08:09:06,358 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,358 - INFO - Cleaning and saving: 2018-03-07_Team_Sheets
+2026-04-02 08:09:06,362 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,362 - INFO - Cleaning and saving: 2018-02-14_Team_Sheets
+2026-04-02 08:09:06,366 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2018/2018-02-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,366 - INFO - Cleaning and saving: 2011-04-15_Team_Sheets
+2026-04-02 08:09:06,372 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2011/2011-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,372 - INFO - Cleaning and saving: 2011-03-13_Team_Sheets
+2026-04-02 08:09:06,377 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2011/2011-03-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,377 - INFO - Cleaning and saving: 2016-01-17_Team_Sheets
+2026-04-02 08:09:06,381 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,381 - INFO - Cleaning and saving: 2016-02-10_Team_Sheets
+2026-04-02 08:09:06,384 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,384 - INFO - Cleaning and saving: 2015-12-21_Team_Sheets
+2026-04-02 08:09:06,387 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,387 - INFO - Cleaning and saving: 2016-02-09_Team_Sheets
+2026-04-02 08:09:06,391 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,391 - INFO - Cleaning and saving: 2016-03-03_Team_Sheets
+2026-04-02 08:09:06,396 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,396 - INFO - Cleaning and saving: 2016-02-06_Team_Sheets
+2026-04-02 08:09:06,400 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,400 - INFO - Cleaning and saving: 2016-01-01_Team_Sheets
+2026-04-02 08:09:06,403 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,403 - INFO - Cleaning and saving: 2015-11-30_Team_Sheets
+2026-04-02 08:09:06,407 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-11-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,407 - INFO - Cleaning and saving: 2016-01-18_Team_Sheets
+2026-04-02 08:09:06,410 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,410 - INFO - Cleaning and saving: 2016-01-25_Team_Sheets
+2026-04-02 08:09:06,413 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,413 - INFO - Cleaning and saving: 2016-02-22_Team_Sheets
+2026-04-02 08:09:06,417 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,417 - INFO - Cleaning and saving: 2016-02-18_Team_Sheets
+2026-04-02 08:09:06,420 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,420 - INFO - Cleaning and saving: 2015-12-14_Team_Sheets
+2026-04-02 08:09:06,424 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,424 - INFO - Cleaning and saving: 2016-02-25_Team_Sheets
+2026-04-02 08:09:06,428 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-25_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,428 - INFO - Cleaning and saving: 2015-12-29_Team_Sheets
+2026-04-02 08:09:06,431 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,431 - INFO - Cleaning and saving: 2016-01-22_Team_Sheets
+2026-04-02 08:09:06,434 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,434 - INFO - Cleaning and saving: 2016-03-12_Team_Sheets
+2026-04-02 08:09:06,440 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,440 - INFO - Cleaning and saving: 2016-02-01_Team_Sheets
+2026-04-02 08:09:06,443 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,443 - INFO - Cleaning and saving: 2016-01-09_Team_Sheets
+2026-04-02 08:09:06,446 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,446 - INFO - Cleaning and saving: 2016-03-04_Team_Sheets
+2026-04-02 08:09:06,450 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,450 - INFO - Cleaning and saving: 2015-12-02_Team_Sheets
+2026-04-02 08:09:06,454 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,454 - INFO - Cleaning and saving: 2015-12-26_Team_Sheets
+2026-04-02 08:09:06,458 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,458 - INFO - Cleaning and saving: 2016-02-17_Team_Sheets
+2026-04-02 08:09:06,461 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-17_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,461 - INFO - Cleaning and saving: 2016-01-23_Team_Sheets
+2026-04-02 08:09:06,465 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,465 - INFO - Cleaning and saving: 2016-03-13_Team_Sheets
+2026-04-02 08:09:06,470 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,470 - INFO - Cleaning and saving: 2016-02-24_Team_Sheets
+2026-04-02 08:09:06,473 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,474 - INFO - Cleaning and saving: 2015-12-03_Team_Sheets
+2026-04-02 08:09:06,477 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,477 - INFO - Cleaning and saving: 2016-03-05_Team_Sheets
+2026-04-02 08:09:06,480 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,480 - INFO - Cleaning and saving: 2015-12-27_Team_Sheets
+2026-04-02 08:09:06,484 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,484 - INFO - Cleaning and saving: 2016-02-16_Team_Sheets
+2026-04-02 08:09:06,487 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,487 - INFO - Cleaning and saving: 2016-02-11_Team_Sheets
+2026-04-02 08:09:06,490 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,491 - INFO - Cleaning and saving: 2016-01-16_Team_Sheets
+2026-04-02 08:09:06,494 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,494 - INFO - Cleaning and saving: 2016-03-02_Team_Sheets
+2026-04-02 08:09:06,498 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,498 - INFO - Cleaning and saving: 2015-12-04_Team_Sheets
+2026-04-02 08:09:06,501 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,501 - INFO - Cleaning and saving: 2016-02-08_Team_Sheets
+2026-04-02 08:09:06,504 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,504 - INFO - Cleaning and saving: 2016-02-07_Team_Sheets
+2026-04-02 08:09:06,507 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,507 - INFO - Cleaning and saving: 2016-02-23_Team_Sheets
+2026-04-02 08:09:06,515 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,515 - INFO - Cleaning and saving: 2015-12-12_Team_Sheets
+2026-04-02 08:09:06,523 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,524 - INFO - Cleaning and saving: 2016-01-19_Team_Sheets
+2026-04-02 08:09:06,528 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,528 - INFO - Cleaning and saving: 2016-01-24_Team_Sheets
+2026-04-02 08:09:06,532 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-24_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,532 - INFO - Cleaning and saving: 2016-02-02_Team_Sheets
+2026-04-02 08:09:06,536 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,536 - INFO - Cleaning and saving: 2016-01-05_Team_Sheets
+2026-04-02 08:09:06,539 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,539 - INFO - Cleaning and saving: 2016-03-08_Team_Sheets
+2026-04-02 08:09:06,544 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,544 - INFO - Cleaning and saving: 2016-04-15_Team_Sheets
+2026-04-02 08:09:06,549 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,549 - INFO - Cleaning and saving: 2016-03-11_Team_Sheets
+2026-04-02 08:09:06,553 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,553 - INFO - Cleaning and saving: 2016-01-21_Team_Sheets
+2026-04-02 08:09:06,558 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,558 - INFO - Cleaning and saving: 2016-02-26_Team_Sheets
+2026-04-02 08:09:06,562 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,562 - INFO - Cleaning and saving: 2015-12-18_Team_Sheets
+2026-04-02 08:09:06,566 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-18_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,566 - INFO - Cleaning and saving: 2016-02-14_Team_Sheets
+2026-04-02 08:09:06,570 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,570 - INFO - Cleaning and saving: 2016-02-29_Team_Sheets
+2026-04-02 08:09:06,575 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,575 - INFO - Cleaning and saving: 2015-12-01_Team_Sheets
+2026-04-02 08:09:06,579 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,579 - INFO - Cleaning and saving: 2016-03-07_Team_Sheets
+2026-04-02 08:09:06,584 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,585 - INFO - Cleaning and saving: 2016-01-30_Team_Sheets
+2026-04-02 08:09:06,588 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-30_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,588 - INFO - Cleaning and saving: 2015-12-22_Team_Sheets
+2026-04-02 08:09:06,592 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-22_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,592 - INFO - Cleaning and saving: 2016-02-13_Team_Sheets
+2026-04-02 08:09:06,596 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-13_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,596 - INFO - Cleaning and saving: 2016-01-14_Team_Sheets
+2026-04-02 08:09:06,600 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-14_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,600 - INFO - Cleaning and saving: 2016-01-29_Team_Sheets
+2026-04-02 08:09:06,604 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-29_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,604 - INFO - Cleaning and saving: 2015-12-10_Team_Sheets
+2026-04-02 08:09:06,608 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,608 - INFO - Cleaning and saving: 2016-02-21_Team_Sheets
+2026-04-02 08:09:06,616 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-21_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,616 - INFO - Cleaning and saving: 2016-01-26_Team_Sheets
+2026-04-02 08:09:06,620 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-26_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,620 - INFO - Cleaning and saving: 2016-01-02_Team_Sheets
+2026-04-02 08:09:06,624 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-02_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,624 - INFO - Cleaning and saving: 2015-12-09_Team_Sheets
+2026-04-02 08:09:06,628 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-09_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,628 - INFO - Cleaning and saving: 2016-02-05_Team_Sheets
+2026-04-02 08:09:06,632 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-05_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,632 - INFO - Cleaning and saving: 2015-12-07_Team_Sheets
+2026-04-02 08:09:06,635 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-07_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,635 - INFO - Cleaning and saving: 2016-03-01_Team_Sheets
+2026-04-02 08:09:06,640 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-01_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,640 - INFO - Cleaning and saving: 2016-01-31_Team_Sheets
+2026-04-02 08:09:06,643 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-31_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,643 - INFO - Cleaning and saving: 2016-01-15_Team_Sheets
+2026-04-02 08:09:06,647 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,647 - INFO - Cleaning and saving: 2016-01-28_Team_Sheets
+2026-04-02 08:09:06,651 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-28_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,651 - INFO - Cleaning and saving: 2015-12-23_Team_Sheets
+2026-04-02 08:09:06,654 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-23_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,654 - INFO - Cleaning and saving: 2016-02-12_Team_Sheets
+2026-04-02 08:09:06,658 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-12_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,658 - INFO - Cleaning and saving: 2016-01-27_Team_Sheets
+2026-04-02 08:09:06,662 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,662 - INFO - Cleaning and saving: 2015-12-11_Team_Sheets
+2026-04-02 08:09:06,665 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-11_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,665 - INFO - Cleaning and saving: 2016-02-20_Team_Sheets
+2026-04-02 08:09:06,669 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,669 - INFO - Cleaning and saving: 2016-02-04_Team_Sheets
+2026-04-02 08:09:06,672 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,672 - INFO - Cleaning and saving: 2015-12-08_Team_Sheets
+2026-04-02 08:09:06,675 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-08_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,675 - INFO - Cleaning and saving: 2016-01-03_Team_Sheets
+2026-04-02 08:09:06,678 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,678 - INFO - Cleaning and saving: 2016-01-04_Team_Sheets
+2026-04-02 08:09:06,682 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-04_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,682 - INFO - Cleaning and saving: 2016-02-03_Team_Sheets
+2026-04-02 08:09:06,686 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-03_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,686 - INFO - Cleaning and saving: 2016-02-27_Team_Sheets
+2026-04-02 08:09:06,689 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-27_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,689 - INFO - Cleaning and saving: 2015-12-16_Team_Sheets
+2026-04-02 08:09:06,693 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-16_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,693 - INFO - Cleaning and saving: 2016-03-10_Team_Sheets
+2026-04-02 08:09:06,696 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-10_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,696 - INFO - Cleaning and saving: 2016-01-20_Team_Sheets
+2026-04-02 08:09:06,699 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-01-20_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,699 - INFO - Cleaning and saving: 2016-02-15_Team_Sheets
+2026-04-02 08:09:06,703 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-02-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,703 - INFO - Cleaning and saving: 2015-12-19_Team_Sheets
+2026-04-02 08:09:06,707 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2015-12-19_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,707 - INFO - Cleaning and saving: 2016-03-06_Team_Sheets
+2026-04-02 08:09:06,711 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2016/2016-03-06_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,711 - INFO - Cleaning and saving: 2005-04-15_Team_Sheets
+2026-04-02 08:09:06,718 - INFO - Saved: /Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/2005/2005-04-15_Team_Sheets_Cleaned.csv
+2026-04-02 08:09:06,718 - INFO - 
+Summary: 485 CSVs saved, 0 PDFs skipped/empty (out of 485 total)

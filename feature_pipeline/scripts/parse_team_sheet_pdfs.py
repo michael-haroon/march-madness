@@ -1,9 +1,14 @@
 import fitz  # PyMuPDF
+import glob
 import re
 import os
+import sys
 import pandas as pd
 import logging
 from concurrent.futures import ThreadPoolExecutor
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+from feature_pipeline.pdf_utils import get_spatial_team_name, page_words_to_dicts
 
 # --- Logging Configuration ---
 logging.basicConfig(
@@ -56,28 +61,7 @@ def get_header_metric(words, label_text):
     candidates.sort(key=lambda x: (x['top'], x['x0']))
     return candidates[0]['text'] if candidates else None
 
-def get_spatial_team_name(words, page_height):
-    header_words = [w for w in words if w['top'] < page_height * 0.12 and 
-                    not any(x in w['text'].upper() for x in ["THROUGH", "GAMES", "OFFICIAL", "PAGE"]) 
-                    and not re.match(r'^\d{1,2}/\d{1,2}/\d{2,4}$', w['text'])]
-    if not header_words: return None
-    
-    header_words.sort(key=lambda x: (x['top'], x['x0']))
-    lines = []
-    if not header_words: return None
-    
-    current_line = [header_words[0]]
-    for i in range(1, len(header_words)):
-        if abs(header_words[i]['top'] - header_words[i-1]['top']) < 3:
-            current_line.append(header_words[i])
-        else:
-            lines.append(" ".join([w['text'] for w in current_line]))
-            current_line = [header_words[i]]
-    lines.append(" ".join([w['text'] for w in current_line]))
-    
-    clean = re.split(r'\(|:|Through Games|\(OFFICIAL\)', lines[0])[0].strip()
-    if re.match(r"^(\w\s)+\w$", clean): clean = clean.replace(" ", "")
-    return clean
+# get_spatial_team_name is imported from feature_pipeline.pdf_utils
 
 # --- Processing Logic ---
 
@@ -97,14 +81,13 @@ def process_single_pdf(file_info):
             # PyMuPDF word tuple: (x0, y0, x1, y1, "text", block_no, line_no, word_no)
             # Map to dict to maintain compatibility with original logic
             raw_words = page.get_text("words")
-            words = [
-                {'x0': w[0], 'top': w[1], 'x1': w[2], 'bottom': w[3], 'text': w[4]}
-                for w in raw_words
-            ]
+            words = page_words_to_dicts(raw_words)
             
             full_text = " ".join([w['text'] for w in words])
             team_name = get_spatial_team_name(words, page.rect.height)
-            if not team_name: continue
+            if not team_name:
+                logging.debug(f"Skipped page {page_num + 1} in {file_name}: no team name found")
+                continue
             
             record_match = re.search(r"(\d{1,2}\s*-\s*\d{1,2})", full_text)
             metrics = {
@@ -136,32 +119,67 @@ def process_single_pdf(file_info):
         logging.error(f"Failed to process {pdf_path}: {e}")
         return None
 
-def clean_and_reconcile(year_key, raw_data, base_path):
+def clean_and_reconcile(year_key, raw_data, base_path, rel_dir):
     if not raw_data: return pd.DataFrame()
     df = pd.DataFrame(raw_data)
     cols_to_check = [c for c in df.columns if c != 'Team']
     df = df.dropna(subset=cols_to_check, how='all').reset_index(drop=True)
-    
-    # Reference path check
-    ref_path = os.path.join(base_path, "team_sheets", f"{year_key}_Team_Sheets_Final.csv")
-    if os.path.exists(ref_path):
-        ref_df = pd.read_csv(ref_path)
-        # Map names if counts match
-        if len(df) <= len(ref_df):
-            df['Team'] = ref_df.iloc[:len(df), 0].values
+
+    # For years ≤ 2014, all files within a year are consistently alphabetically ordered.
+    # Use any CSV from rpi_archive_copy/{year}/ as a 1-to-1 row-position reference for
+    # clean team names, since the copy has the same alphabetical ordering.
+    folder_year = None
+    for part in rel_dir.replace("\\", "/").split("/"):
+        if part.isdigit():
+            folder_year = int(part)
+            break
+
+    if folder_year is not None and folder_year <= 2014:
+        copy_dir = os.path.join(base_path, "raw", "test", "rpi_archive copy", str(folder_year))
+        ref_csvs = sorted(glob.glob(os.path.join(copy_dir, "*.csv")))
+        if ref_csvs:
+            ref_df = pd.read_csv(ref_csvs[0])
+            if "Team" in ref_df.columns:
+                # Extract clean name from raw Team column values in the reference.
+                # Handles both observed formats:
+                #   Suffix: "TEAM Of Final YYYY" → take before " Of "
+                #   Prefix: "Of DOW, Month D, YYYY TEAM [W-L SYS]" → strip prefix/record
+                _record = re.compile(r"\s+\d+-\d+\s+[A-Za-z]{2,}$")
+                def _ref_name(s: str) -> str:
+                    s = str(s).strip()
+                    if " Of " in s and not s.startswith("Of "):
+                        return s.split(" Of ")[0].strip()
+                    if s.startswith("Of "):
+                        rest = s[3:]
+                        # "DOW, Month D, YYYY TEAM" or "Month D, YYYY TEAM"
+                        m = re.match(r'^(?:\w+,\s+)?(?:\w+\.?\s+\d+,?\s+\d{4})\s+(.+)$', rest)
+                        if m:
+                            return _record.sub("", m.group(1)).strip()
+                        # "Final YYYY TEAM" or "YYYY Final TEAM"
+                        m = re.match(r'^(?:Final\s+\d{4}|\d{4}\s+Final)\s+(.+)$', rest)
+                        if m:
+                            return _record.sub("", m.group(1)).strip()
+                    return _record.sub("", s).strip()
+                ref_names = [_ref_name(v) for v in ref_df["Team"].astype(str)]
+                if len(ref_names) >= len(df):
+                    df["Team"] = ref_names[:len(df)]
+                else:
+                    logging.warning(
+                        f"rpi_archive_copy reference too short for {year_key}: "
+                        f"copy has {len(ref_names)} rows, parsed has {len(df)}"
+                    )
         else:
-            logging.warning(f"Row mismatch in {year_key}: Parsed {len(df)} > Reference {len(ref_df)}")
-    else:
-        logging.warning(f"Reference CSV not found: {ref_path}")
-    
+            logging.warning(f"No reference CSV found in rpi_archive copy for year {folder_year}")
+
     return df
 
 # --- Main Execution ---
 
 if __name__ == "__main__":
-    pdf_dir = "/Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/"
+    # Scoped to rpi_archive only — do not walk the full men/team_sheets/ tree
+    pdf_dir = "/Users/michaelharoon/Projects/tasty/march-madness/data/raw/pdf/men/team_sheets/rpi_archive/"
     base_proj_path = "/Users/michaelharoon/Projects/tasty/march-madness/data/"
-    output_base_dir = "/Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/"
+    output_base_dir = "/Users/michaelharoon/Projects/tasty/march-madness/data/raw/test/rpi_archive/"
 
     # 1. Collect all PDF paths recursively
     pdf_tasks = []
@@ -169,7 +187,7 @@ if __name__ == "__main__":
         for f in files:
             if f.lower().endswith(".pdf"):
                 full_path = os.path.join(root, f)
-                # Keep the subfolder structure relative to the root pdf_dir
+                # Keep the subfolder structure relative to the rpi_archive root
                 rel_dir = os.path.relpath(root, pdf_dir)
                 pdf_tasks.append((full_path, rel_dir))
 
@@ -179,21 +197,32 @@ if __name__ == "__main__":
     with ThreadPoolExecutor() as executor:
         results = list(executor.map(process_single_pdf, pdf_tasks))
 
+    skipped = 0
+    saved = 0
+
     # 3. Reconcile and Save with structure
     for result in results:
-        if result is None: continue
+        if result is None:
+            skipped += 1
+            continue
         year_key, raw_teams, rel_dir = result
-        
+
         logging.info(f"Cleaning and saving: {year_key}")
-        cleaned_df = clean_and_reconcile(year_key, raw_teams, base_proj_path)
-        
+        cleaned_df = clean_and_reconcile(year_key, raw_teams, base_proj_path, rel_dir)
+
         if not cleaned_df.empty:
-            # Recreate subfolder structure in the output directory
             target_output_path = os.path.join(output_base_dir, rel_dir)
             os.makedirs(target_output_path, exist_ok=True)
-            
+
             save_path = os.path.join(target_output_path, f"{year_key}_Cleaned.csv")
             cleaned_df.to_csv(save_path, index=False)
             logging.info(f"Saved: {save_path}")
+            saved += 1
         else:
             logging.warning(f"No valid data extracted for {year_key}")
+            skipped += 1
+
+    logging.info(
+        f"\nSummary: {saved} CSVs saved, {skipped} PDFs skipped/empty "
+        f"(out of {len(pdf_tasks)} total)"
+    )

@@ -2,6 +2,8 @@
 
 Instructions and context for Claude Code working in this repository.
 
+Always use conda env `tasty`. it has pandas and python.
+
 ---
 
 ## Project Goal
@@ -121,17 +123,34 @@ Use `data/kaggle/MTeamSpellings.csv` as the primary name → TeamID mapper. It h
 
 ---
 
-## Pipeline Architecture (added 2026-03-31)
+## Pipeline Architecture (updated 2026-04-03)
 
-### New files
-- `pipeline/name_resolver.py` — bidirectional team name ↔ Kaggle TeamID mapping. 0% miss rate on all 279 tournament teams (2003–2026). Call `build_id_lookup('data/kaggle')` to get the lookup dict.
-- `pipeline/market_features.py` — Kalshi microstructure loader and feature computer. `load_kalshi_trades(data_dir)` + `compute_market_features(trades)` → VWAP, OFI, momentum, volatility, trade count.
+All pipeline code lives in `feature_pipeline/`. The module was previously called `pipeline/`.
 
-### Extended files
-- `pipeline/data_loader.py` — `load_all()` now accepts `include_kaggle`, `include_team_stats`, `include_market` flags. Data subdirectories are automatically routed: team sheets → `data/team_sheets/`, yearlys → `data/yearlys/`, kaggle → `data/kaggle/`.
-- `pipeline/feature_engineering.py` — `build_features()` now includes cross-source reconciliation (drop ts_* redundant with Kaggle) and PCA reduction of team-stats. New constants: `TIER1_FEATURES`, `KAGGLE_FEATURES`, `TOURNEY_PATH_FEATURES`, `TEAM_STATS_PC_FEATURES`, `MARKET_FEATURES`.
-- `pipeline/model.py` — `build_market_meta_labels()` uses Kalshi VWAP as primary model for 2025–2026, falls back to `consensus_rank` for earlier years.
-- `pipeline/run.py` — Step 3b: SFI on Tier 1 (~1,400 tournament team rows). Step 8: feature discovery catalog CSV.
+### Active pipeline: `run_v2.py` + `game_model.py`
+
+**Entry point:** `python -m feature_pipeline.run_v2`
+
+Data flow:
+1. `game_model.build_team_season_features(data_dir)` — builds one feature vector per (Season, TeamID) using **only DayNum ≤ 132** (pre-tournament). Reads Kaggle CSVs directly; does NOT call `load_all`.
+2. `data_loader.load_all(include_kaggle=False)` via `enrich_with_existing_features` — merges team sheet metrics, award flags, quadrant features. No Kaggle game stats here so no DayNum issue.
+3. `game_model.build_game_pairs(team_df, tourney_results)` — constructs one row per tournament game (R1–Championship) with diff features. Label = did team A win THIS game.
+4. `game_model.train_game_model(pairs_df)` — LightGBM with leave-one-year-out CV on ~1,400 tournament games (2003–2025).
+5. `game_model.predict_final_four(model, team_df_2026, ff_ids, n_sims=50000)` — Monte Carlo bracket simulation to derive championship probabilities.
+6. `market_features.blend_with_market(preds, mkt_2026, market_weight=0.3)` — blends model probs with Kalshi VWAP.
+
+Outputs to `output_v2/`: `team_season_features.csv`, `game_pairs.csv`, `cv_results.csv`, `feature_importance.csv`, `2026_predictions.csv`.
+
+### Legacy pipeline: `run.py` (not actively used)
+
+`run.py` is a standalone Final-Four-only pipeline (84 rows, de Prado MDI/MDA/SFI on champion_flag). It uses `data_loader.load_all(include_kaggle=True)` and a Bradley-Terry pairwise model. **Do not confuse with run_v2.py** — they share `data_loader.py` and `feature_engineering.py` but are otherwise independent.
+
+### Key files
+- `feature_pipeline/game_model.py` — core of the active pipeline. `build_team_season_features` is where DayNum ≤ 132 filtering lives for the run_v2 path.
+- `feature_pipeline/data_loader.py` — `load_all()` accepts `include_kaggle`, `include_team_stats`, `include_market` flags. Used by both pipelines for team sheet / enrichment loading.
+- `feature_pipeline/feature_engineering.py` — `build_features()`, feature group constants (`TIER1_FEATURES`, `KAGGLE_FEATURES`, `TOURNEY_PATH_FEATURES`, etc.), cross-source reconciliation, PCA.
+- `feature_pipeline/name_resolver.py` — bidirectional team name ↔ Kaggle TeamID. 0% miss rate on all 279 tournament teams (2003–2026).
+- `feature_pipeline/market_features.py` — Kalshi microstructure loader. `load_kalshi_trades` + `compute_market_features` → VWAP, OFI, momentum, volatility, trade count.
 
 ### Cross-source reconciliation findings
 `reconcile_cross_source()` always drops ts_ in favor of kg_ — no correlation gate. Kaggle covers all years with consistent game-level aggregation; ts_ is spot data for a subset of years. Correlation is printed as a diagnostic only.
