@@ -3,6 +3,8 @@ making updates with de prado tehcniques
 the model did -log loss wrong.
 - 
 
+model the underlying for entry, then model the market behavior for live
+
 
 # FEATURES.md — March Madness ML Feature Reference
 
