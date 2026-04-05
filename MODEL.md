@@ -26,7 +26,7 @@ Many features are only available for some years. NET rank didn't exist before 20
 
 ### The correct approach: binary missingness indicators
 
-In `pipeline/feature_engineering.py: handle_missing()`:
+In `feature_pipeline/feature_engineering.py: handle_missing()`:
 ```python
 df[f"{col}_missing"] = is_null.astype(int)   # 1 = this value was absent
 df[col] = df[col].fillna(df[col].median())   # fill so the column is numeric
@@ -88,7 +88,7 @@ In our feature importance runs, `net_rank_missing` and similar indicators rank i
 
 **Setup**: For each year's Final Four, generate all ordered pairs (A, B) where A ≠ B. Features = A_metric − B_metric for each feature. Target = 1 if A finished better (lower finish_rank), 0 otherwise.
 
-`pipeline/model.py: build_pairwise()` uses `itertools.permutations(teams, 2)` — both orderings of each pair — giving 4×3 = 12 rows per year × 21 years = **252 training observations** from the same 84 team-seasons.
+`strategy/model.py: build_pairwise()` uses `itertools.permutations(teams, 2)` — both orderings of each pair — giving 4×3 = 12 rows per year × 21 years = **252 training observations** from the same 84 team-seasons.
 
 ### Why pairwise is superior — the theory
 
@@ -132,7 +132,7 @@ This is exactly what a logistic regression or gradient-boosted classifier on fea
 
 ### Aggregation: pairwise → win probability
 
-After the model produces P(A beats B) for all 12 ordered pairs, aggregate to team-level win probability in `pipeline/model.py: pairwise_to_win_prob()`:
+After the model produces P(A beats B) for all 12 ordered pairs, aggregate to team-level win probability in `strategy/model.py: pairwise_to_win_prob()`:
 
 1. For each team A and each of its 3 opponents (B, C, D): get P(A beats B), P(A beats C), P(A beats D)
 2. Take the mean: `raw_prob_A = mean([P(A>B), P(A>C), P(A>D)])`
@@ -142,7 +142,7 @@ This aggregation is principled — it's the Condorcet aggregation of pairwise co
 
 ### The fallback when the pairwise model isn't trained
 
-When there aren't enough clean pairs to train (e.g., first run before NaN imputation is complete), the fallback in `pipeline/run.py` computes a **composite ranking**:
+When there aren't enough clean pairs to train (e.g., first run before NaN imputation is complete), the fallback in `strategy/run.py` computes a **composite ranking**:
 
 ```python
 win_prob = 0.50 × normalise(mkt_vwap)          # market implied prob
@@ -175,7 +175,7 @@ The de Prado suite addresses all three.
 
 ### Method 1: MDI (Mean Decrease Impurity)
 
-**Implementation**: `pipeline/feature_importance.py: feat_imp_mdi()`
+**Implementation**: `feature_pipeline/feature_importance.py: feat_imp_mdi()`
 
 After fitting the Random Forest, for each decision tree, walk every internal node. Record:
 - Which feature was used for the split
@@ -200,7 +200,7 @@ MDI is a first pass — identifies what the model uses, not what genuinely predi
 
 ### Method 2: MDA (Mean Decrease Accuracy)
 
-**Implementation**: `pipeline/feature_importance.py: feat_imp_mda()`
+**Implementation**: `feature_pipeline/feature_importance.py: feat_imp_mda()`
 
 For each fold in PurgedYearKFold:
 1. Fit the model on training years
@@ -236,7 +236,7 @@ The CFI importance of the rankings cluster is substantially higher than any indi
 
 ### Method 3: SFI (Single Feature Importance)
 
-**Implementation**: `pipeline/feature_importance.py: feat_imp_sfi()`
+**Implementation**: `feature_pipeline/feature_importance.py: feat_imp_sfi()`
 
 Train the model on ONE feature at a time. For each feature X_j:
 1. For each fold in PurgedYearKFold: train on `{X_j}` only, evaluate log-loss on held-out year
@@ -258,7 +258,7 @@ SFI is the **primary filter** in our pipeline. Features that score below the log
 
 ### Method 4: PurgedYearKFold
 
-**Implementation**: `pipeline/feature_importance.py: PurgedYearKFold`
+**Implementation**: `feature_pipeline/feature_importance.py: PurgedYearKFold`
 
 Standard k-fold on temporal data causes **future leakage**: if fold 3 contains data from 2010 and fold 4 contains data from 2015, the model trained on fold 4 has "seen the future" relative to fold 3's test set. In time series with correlated observations, this inflates validation metrics significantly.
 
@@ -278,7 +278,7 @@ Additionally, since we have 21 years, 21-fold leave-one-year-out gives us 21 ind
 
 ### Synthetic Validation
 
-**Implementation**: `pipeline/feature_importance.py: synthetic_validation()`
+**Implementation**: `feature_pipeline/feature_importance.py: synthetic_validation()`
 
 Before trusting any importance result on real basketball data, we verify the methods work on data where we know the ground truth.
 
@@ -307,7 +307,7 @@ The Random Forest is used for *feature importance* because it has well-studied M
 - With `early_stopping(30)`, it automatically finds the optimal number of trees
 - Faster inference on the 4-team Final Four frame
 
-**Hyperparameters and their justification** (`pipeline/config.py: LGBM_PARAMS`):
+**Hyperparameters and their justification** (`feature_pipeline/config.py: LGBM_PARAMS`):
 
 | Parameter | Value | Why |
 |---|---|---|
@@ -324,7 +324,7 @@ The Random Forest is used for *feature importance* because it has well-studied M
 
 For each leave-one-year-out fold, `early_stopping(30, verbose=False)` monitors log-loss on the held-out year and stops when it doesn't improve for 30 consecutive rounds. This means each fold might use a different number of trees (50 rounds in a "hard" year, 250 in an "easy" year). The final model (trained on ALL data) uses the average optimal number of rounds from CV.
 
-**Time-decay sample weights** (`pipeline/feature_engineering.py: time_decay_weights()`):
+**Time-decay sample weights** (`feature_pipeline/feature_engineering.py: time_decay_weights()`):
 
 ```python
 weight(year) = 0.3 + 0.7 × (year_position / n_years)
@@ -340,7 +340,7 @@ The coefficient `c=0.3` (not 0.0) preserves some weight for old data because the
 
 ## Part 5: Meta-Labeling (Tier 3)
 
-**Implementation**: `pipeline/model.py: build_market_meta_labels()`
+**Implementation**: `strategy/model.py: build_market_meta_labels()`
 
 De Prado (AFML Ch.3) introduced meta-labeling as a two-model framework:
 - **Primary model**: high recall, simpler, produces candidate signals

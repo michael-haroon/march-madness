@@ -120,7 +120,7 @@ The Kalshi data expands your universe to all 68 teams for 2025–2026, which mea
 
 ## 2026 Live Prediction Target
 
-The 2026 Final Four is: **Illinois, UConn, Michigan, Arizona** (confirmed, per README).
-The championship game has not been played yet as of 2026-03-31.
-Your market data runs through today — Kalshi prices up to tip-off are available as features.
+The 2026 Final Four is: **Illinois, UConn, Michigan, Arizona** (confirmed).
+The championship game has not been played yet as of 2026-04-05.
+Market data runs through the current date — Kalshi prices up to tip-off are available as features.
 Treat 2026 as test data, not training data.

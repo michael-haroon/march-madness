@@ -1,11 +1,3 @@
-making updates with de prado tehcniques
-- hardest part is answering "do we embargo? How much?" FOr now I will say no, but year over year is not highly correlated. if it were, finals would be deterministic!
-the model did -log loss wrong.
-- 
-
-model the underlying for entry, then model the market behavior for live
-
-
 # FEATURES.md — March Madness ML Feature Reference
 
 ## 1. ML Architecture Overview
@@ -41,19 +33,19 @@ The Final Four is a 4-team ranking problem (1st–4th place). Pairwise conversio
 
 ### The Base Model
 
-**Random Forest** (`pipeline/feature_importance.py: build_rf()`):
+**Random Forest** (`feature_pipeline/feature_importance.py: build_rf()`):
 - `DecisionTreeClassifier(max_features=1, criterion="entropy")`
 - Wrapped in `BaggingClassifier(n_estimators=1000)`
 - `max_features=1` is de Prado's key parameter — every split considers exactly one random feature, giving all features equal opportunity to be selected
 
-**LightGBM** (`pipeline/model.py`) for the final pairwise prediction:
+**LightGBM** (`strategy/model.py`) for the final pairwise prediction:
 - `objective="binary"`, `max_depth=4` (shallow to prevent overfit on 252 rows)
 - `subsample=0.8, colsample_bytree=0.8` (further regularization)
 - `class_weight="balanced"` (champions are rare — 1/4 = 25% positive rate)
 
 ### Cross-Validation
 
-**PurgedYearKFold** (`pipeline/feature_importance.py: PurgedYearKFold`):
+**PurgedYearKFold** (`feature_pipeline/feature_importance.py: PurgedYearKFold`):
 - Leave-one-year-out: train on 20 years, test on 1 year
 - No temporal leakage — each row is a full season, no game-by-game overlap to purge
 - Applied in MDI (in-sample only), MDA, SFI, CFI, and LightGBM pairwise CV
@@ -73,7 +65,7 @@ if method == "indicator":
     df[col] = df[col].fillna(fill_val)            # fill with median
 ```
 
-Every feature marked `"indicator"` in `MISSING_STRATEGY` (`pipeline/config.py`) gets a paired `{col}_missing` column added. So for `net_rank`:
+Every feature marked `"indicator"` in `MISSING_STRATEGY` (`feature_pipeline/config.py`) gets a paired `{col}_missing` column added. So for `net_rank`:
 - `net_rank` → filled with median (keeps the column numeric)
 - `net_rank_missing` → 1 for 2005–2018 (pre-NET era), 0 for 2019+
 
@@ -93,7 +85,7 @@ Collinearity is the central challenge in this dataset. NET rank, POM, SAG, BPI, 
 
 ### Three mechanisms address it:
 
-**a) Cross-source reconciliation** (`pipeline/feature_engineering.py: reconcile_cross_source()`)
+**a) Cross-source reconciliation** (`feature_pipeline/feature_engineering.py: reconcile_cross_source()`)
 
 Before importance analysis, pairs of features from different sources (Kaggle vs team-stats) are compared. If Pearson r > 0.95, the redundant one is dropped. From our run:
 - `kg_opp_fg_pct` vs `ts_fg_pct_def`: r=0.985 → dropped ts_ version
@@ -101,7 +93,7 @@ Before importance analysis, pairs of features from different sources (Kaggle vs 
 
 This is structural deduplication — not statistical, just logical.
 
-**b) ONC clustering + Clustered Feature Importance (CFI)** (`pipeline/feature_importance.py: onc_cluster(), feat_imp_cfi_mda()`)
+**b) ONC clustering + Clustered Feature Importance (CFI)** (`feature_pipeline/feature_importance.py: onc_cluster(), feat_imp_cfi_mda()`)
 
 ONC (Optimal Number of Clusters) groups features by their correlation structure using silhouette t-stat as the quality criterion. Then CFI shuffles an *entire cluster at once* during MDA permutation.
 
@@ -112,7 +104,7 @@ From our last run, ONC found 3 clusters:
 - **Cluster 2 (performance)**: scoring margin, FG%, tournament path, rebounding, records — what the team actually did on the court
 - **Cluster 0 (efficiency/pace)**: turnovers, steals, blocks, individual box stats, NET/KPI/SOR
 
-**c) SFI as collinearity-free baseline** (`pipeline/feature_importance.py: feat_imp_sfi()`)
+**c) SFI as collinearity-free baseline** (`feature_pipeline/feature_importance.py: feat_imp_sfi()`)
 
 Single Feature Importance trains the model on ONE feature at a time. Zero collinearity is possible. If a feature scores high on SFI but low on MDA, the interpretation is: "this feature has standalone signal, but it's already captured by something else in the feature set." That's useful information — it tells you features are substitutable.
 
@@ -145,7 +137,7 @@ The tree depth (`max_depth=4` for LightGBM) limits interaction depth to 4 levels
 
 ## 5. Synthetic Validation — How It Works
 
-(`pipeline/feature_importance.py: synthetic_validation()`)
+(`feature_pipeline/feature_importance.py: synthetic_validation()`)
 
 Before running importance analysis on real data, we verify the MDI/SFI methods can recover known signal. Here's exactly what it does:
 
