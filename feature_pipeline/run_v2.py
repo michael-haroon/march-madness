@@ -1,14 +1,17 @@
 """
 run_v2.py
 ---------
-Pairwise game-level pipeline for NCAA tournament prediction (Phase 1A + 1B).
+Feature analysis pipeline for NCAA tournament prediction.
 
-Orchestrates: team features → enrichment → game pairs (with path) → model → predictions
+Orchestrates: team features → enrichment → game pairs → de Prado feature analysis
+(PCA → ONC clustering → MDI/MDA/SFI)
+
+Predictive modeling and trading strategy live in /strategy (separate module).
 
 Usage:
     python -m feature_pipeline.run_v2 [--data-dir data/] [--output-dir output_v2/]
     python -m feature_pipeline.run_v2 --skip-enrich   # Kaggle-only features
-    python -m feature_pipeline.run_v2 --skip-path     # Phase 1A only (no path features)
+    python -m feature_pipeline.run_v2 --skip-path     # No tournament path features
 """
 
 import argparse
@@ -19,18 +22,12 @@ from feature_pipeline.game_model import (
     build_team_season_features,
     enrich_with_existing_features,
     build_game_pairs,
-    train_game_model,
-    predict_final_four,
-    blend_with_market,
-    load_actual_path_features,
 )
-from feature_pipeline.name_resolver import build_id_lookup, resolve_team_id
-from feature_pipeline.config import BRACKET_2026, TEAM_NAME_MAP
+from feature_pipeline.feature_importance import run_all_importance, synthetic_validation
 
 
 def main(data_dir: str = "data", output_dir: str = "output_v2",
-         skip_enrich: bool = False, skip_path: bool = False,
-         n_sims: int = 50000):
+         skip_enrich: bool = False, skip_path: bool = False):
     output = Path(output_dir)
     output.mkdir(exist_ok=True)
 
@@ -41,17 +38,6 @@ def main(data_dir: str = "data", output_dir: str = "output_v2",
     team_df = build_team_season_features(data_dir, min_season=2003)
     team_df.to_csv(output / "team_season_features.csv", index=False)
     print(f"  {len(team_df)} team-seasons built, {team_df.shape[1]} columns")
-
-    # ── Market features — loaded once, reused in Step 6 ───────────────────────
-    mkt_features = None
-    print("Loading market features (used for blend in Step 6)...")
-    try:
-        from feature_pipeline.market_features import load_kalshi_trades, compute_market_features
-        _trades = load_kalshi_trades(data_dir)
-        mkt_features = compute_market_features(_trades)
-        print(f"  Market features loaded: {len(mkt_features)} (year, team) pairs")
-    except Exception as e:
-        print(f"  Market load failed: {e}")
 
     # ── Step 2: Enrich with team sheets, awards, rankings ─────────────────────
     if not skip_enrich:
@@ -64,11 +50,12 @@ def main(data_dir: str = "data", output_dir: str = "output_v2",
                 data_dir,
                 include_kaggle=False,   # Kaggle game stats already in team_df from Step 1
                 include_team_stats=False,
-                include_market=False,   # Market handled separately above
+                include_market=False,
                 verbose=False,
             )
+            # run_pca=True: compress ts_* features into principal components
             existing_df = build_features(
-                existing_df, run_pca=False, run_reconcile=False, verbose=False
+                existing_df, run_pca=True, run_reconcile=False, verbose=False
             )
             team_df = enrich_with_existing_features(team_df, existing_df)
             print(f"  {team_df.shape[1]} features per team-season after enrichment")
@@ -97,106 +84,85 @@ def main(data_dir: str = "data", output_dir: str = "output_v2",
     print(f"  {len(pairs_df)} tournament games (label balance: {label_balance:.3f}), "
           f"{len(path_cols)} path diff columns")
 
-    # ── Step 4: Train pairwise model ──────────────────────────────────────────
-    print("Step 4: Training pairwise game model...")
-    results = train_game_model(pairs_df)
-    results["cv_results"].to_csv(output / "cv_results.csv", index=False)
-    results["oof_preds"].to_csv(output / "oof_predictions.csv", index=False)
-    results["feature_importance"].to_csv(output / "feature_importance.csv", index=False)
+    # ── Step 4: de Prado feature analysis (PCA already applied above) ─────────
+    # Flow: ONC clustering (internal) → MDI → MDA → SFI
+    # Target = pairwise game win. Folds = seasons (non-overlapping, no purge needed).
+    print("\nStep 4: de Prado feature importance analysis...")
 
-    mean_auc = results["cv_results"]["auc"].mean()
-    mean_ll = results["cv_results"]["log_loss"].mean()
-    mean_acc = results["cv_results"]["accuracy"].mean()
-    print(f"  CV AUC: {mean_auc:.4f}  Log-Loss: {mean_ll:.4f}  Accuracy: {mean_acc:.4f}")
+    # Synthetic validation — confirms MDI can recover a known signal before real run
+    synth = synthetic_validation()
+    print(f"  Synthetic MDI validation: {'PASS' if synth['mdi_pass'] else 'FAIL'}")
 
-    print("\nTop 10 features by importance:")
-    for _, row in results["feature_importance"].head(10).iterrows():
-        print(f"  {row['feature']:<42} {row['importance']:.1f}")
+    # Build X, y, years from game pairs
+    # Use all numeric diff columns (team_a - team_b feature differences) as X
+    skip_cols = {"Season", "team_a_id", "team_b_id", "team_a_wins",
+                 "team_a_seed", "team_b_seed", "DayNum", "Round"}
+    feat_cols = [c for c in pairs_df.columns
+                 if c not in skip_cols and pairs_df[c].dtype.kind in "fi"]
+    X = pairs_df[feat_cols].copy()
+    y = pairs_df["team_a_wins"].astype(int)
+    years = pairs_df["Season"]
 
-    # ── Step 5: Predict 2026 Final Four ───────────────────────────────────────
-    print("\nStep 5: Predicting 2026 Final Four...")
-    lookup = build_id_lookup(kaggle_dir)
+    print(f"  Running MDI/MDA/SFI on {len(X)} game pairs, {len(feat_cols)} features...")
 
-    semi1_names = BRACKET_2026["semi1"]
-    semi2_names = BRACKET_2026["semi2"]
-    all_ff_names = list(semi1_names) + list(semi2_names)
+    # run_all_importance handles ONC clustering internally for clustered MDI/MDA
+    importance_results = run_all_importance(X, y, years, run_sfi=True)
 
-    ff_ids = []
-    for name in all_ff_names:
-        tid = resolve_team_id(name, lookup, TEAM_NAME_MAP)
-        if tid is None:
-            print(f"  WARNING: Could not resolve '{name}' to TeamID")
-        ff_ids.append(tid)
+    # Save summary (includes p-values)
+    importance_results["summary"].to_csv(output / "feature_importance_catalog.csv")
 
-    if any(tid is None for tid in ff_ids):
-        print("  WARNING: Some teams could not be resolved.")
-        ff_ids = [tid if tid is not None else -(i + 1) for i, tid in enumerate(ff_ids)]
+    # Save per-method summaries
+    importance_results["mdi"].to_csv(output / "importance_mdi.csv")
+    importance_results["mda"].to_csv(output / "importance_mda.csv")
+    if importance_results.get("sfi") is not None:
+        importance_results["sfi"].to_csv(output / "importance_sfi.csv")
 
-    team_df_2026 = team_df[team_df["Season"] == 2026]
-    if len(team_df_2026) == 0:
-        print("  WARNING: No 2026 season data. Using 2025 as proxy.")
-        team_df_2026 = team_df[team_df["Season"] == 2025].copy()
-        team_df_2026["Season"] = 2026
+    # Save raw distributions
+    importance_results["mdi_raw"].to_csv(output / "importance_mdi_raw.csv", index=True)
+    importance_results["mda_raw"].to_csv(output / "importance_mda_raw.csv", index=True)
+    if importance_results.get("sfi_raw") is not None:
+        importance_results["sfi_raw"].to_csv(output / "importance_sfi_raw.csv", index=True)
 
-    # Load actual E8 path features for 2026 FF teams (real tournament results)
-    actual_path_feats = None
-    if not skip_path:
-        try:
-            actual_path_feats = load_actual_path_features(data_dir, season=2026,
-                                                          team_ids=[t for t in ff_ids if t])
-            print(f"  Loaded actual path features for "
-                  f"{sum(1 for v in actual_path_feats.values() if v['path_games_played'] > 0)} "
-                  f"teams (games through E8)")
-        except Exception as e:
-            print(f"  Path feature load failed: {e}; proceeding without path features")
-            actual_path_feats = None
+    # Save filter report (de Prado criteria: tiers, pass/fail, composite rank)
+    filtered_dir = output / "filtered"
+    filtered_dir.mkdir(exist_ok=True)
+    importance_results["filter_report"].to_csv(filtered_dir / "feature_report.csv")
+    survivors = importance_results["survivors"]
+    with open(filtered_dir / "feature_list.txt", "w") as f:
+        f.write("\n".join(survivors))
+    print(f"\n  {len(survivors)} surviving features → {filtered_dir}/feature_list.txt")
 
-    preds = predict_final_four(
-        results["model"],
-        team_df_2026,
-        ff_ids,
-        results["feature_cols"],
-        n_sims=n_sims,
-        random_seed=42,
-        include_path=(not skip_path and actual_path_feats is not None),
-        actual_path_features=actual_path_feats,
-    )
+    # Save PCA cross-check results
+    importance_results["pca_info"].to_csv(output / "pca_cross_check.csv")
+    import json
+    with open(output / "kendall_tau.json", "w") as f:
+        json.dump(importance_results["tau_results"], f, indent=2)
 
-    # ── Step 6: Blend with market (use cached features — no re-load) ──────────
-    print("Step 6: Blending with Kalshi market...")
-    if mkt_features is not None:
-        mkt_2026 = mkt_features[mkt_features["year"] == 2026].copy()
-        if len(mkt_2026) == 0:
-            mkt_2026 = mkt_features[mkt_features["year"] == mkt_features["year"].max()].copy()
-            mkt_2026["year"] = 2026
-        preds = blend_with_market(preds, mkt_2026, market_weight=0.3)
-        print("  Market blend successful")
+    print("\nTop 15 features by SFI mean:")
+    sfi = importance_results.get("sfi")
+    if sfi is not None:
+        top = sfi.nlargest(15, "mean")
+        for feat, row in top.iterrows():
+            print(f"  {feat:<42} SFI={row['mean']:.4f}")
     else:
-        print("  Market data unavailable; using model probs directly")
-        preds["blended_prob"] = preds["p_champion"]
-        preds["mkt_implied"] = float("nan")
-        preds["model_edge"] = float("nan")
+        print("  SFI not available")
 
-    preds.to_csv(output / "2026_predictions.csv", index=False)
-
-    print("\n" + "=" * 57)
-    print("  2026 Championship Predictions")
-    print("=" * 57)
-    display_cols = ["team_name", "seed", "p_win_semi", "p_champion", "blended_prob", "model_edge"]
-    display_cols = [c for c in display_cols if c in preds.columns]
-    print(preds[display_cols].to_string(index=False))
-    print("=" * 57)
     print(f"\nOutputs written to {output}/")
+    print("  feature_importance_catalog.csv     ← summary: MDI/MDA/SFI + p-values")
+    print("  importance_mdi_raw/mda_raw/sfi_raw ← per-tree/fold distributions")
+    print("  filtered/feature_report.csv        ← de Prado filter: tiers + pass/fail")
+    print("  filtered/feature_list.txt          ← STRONG + MODERATE survivors")
+    print("  pca_cross_check.csv                ← PCA ranks + weighted loadings")
+    print("  kendall_tau.json                   ← weighted Kendall's tau vs MDI/MDA/SFI")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Pairwise game-level NCAA tournament model")
+    parser = argparse.ArgumentParser(description="NCAA tournament feature analysis pipeline")
     parser.add_argument("--data-dir", default="data")
-    parser.add_argument("--output-dir", default="output_v2")
+    parser.add_argument("--output-dir", default="output_v2/features")
     parser.add_argument("--skip-enrich", action="store_true",
                         help="Skip team-sheet enrichment (Kaggle-only features)")
     parser.add_argument("--skip-path", action="store_true",
-                        help="Skip tournament path features (Phase 1A only)")
-    parser.add_argument("--n-sims", type=int, default=50000)
+                        help="Skip tournament path features")
     args = parser.parse_args()
-    main(args.data_dir, args.output_dir, args.skip_enrich, args.skip_path, args.n_sims)
+    main(args.data_dir, args.output_dir, args.skip_enrich, args.skip_path)

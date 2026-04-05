@@ -4,6 +4,13 @@
 ---
 Look at data you have for 2026. get that for the past. We don't use RPI in 2026 so who cares
 
+I NEED TO ADD RECENT GAME STATISTICS FOR 2026 TOURNAMENT!
+
+is region of finals location a feature? like might the east coast teams play at east coast have better performance
+
+- [ ] two separate agents: one refactors code to only v2 and improves upon it, and the other recalculate my features usingly only kaggle so it does not load mine
+    - we also need to check if v2 models championship given the real walk or if it's unconditional.
+    - to make a strategy, we want to build a model that conditions on the current random walk of reality to se who is most likely to win
 
 - Why do we even need Warner Nolan team sheet? Use all other data first, then come back to it
 - move all features into kaggle datasets and just build on top of their dataset.

@@ -1,3 +1,9 @@
+making updates with de prado tehcniques
+- hardest part is answering "do we embargo? How much?" FOr now I will say no, but year over year is not highly correlated. if it were, finals would be deterministic!
+the model did -log loss wrong.
+- 
+
+
 # FEATURES.md — March Madness ML Feature Reference
 
 ## 1. ML Architecture Overview
