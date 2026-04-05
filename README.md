@@ -1,4 +1,6 @@
 update readme: archived data are data that have been cleaned and added to kaggle data set; wanted improvements include a modulated name normalizer
+
+we can generalize this repo to all basketball associattions
 ---
 # Potential Features for March Madness as tournament comes to a close
 

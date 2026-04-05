@@ -737,55 +737,94 @@ def run_all_importance(X: pd.DataFrame,
                        sample_weight: pd.Series = None,
                        run_sfi: bool = True) -> dict:
     """
-    Run MDI, MDA, SFI, and CFI on the provided feature matrix.
+    Run feature importance following de Prado's full protocol:
+      1. Unsupervised Pre-processing  — denoise/detone correlation matrix
+      2. Unsupervised Discovery       — ONC clustering on denoised corr
+      3. Supervised Attribution       — CFI (MDI + MDA on clusters)
+      4. Unsupervised Orthogonalization — PCA on features, rank by eigenvalue
+      5. Supervised Orthogonal Importance — MDI/MDA/SFI on PCA components
+      6. Validation                   — weighted Kendall's tau (eigenvalue rank vs importance rank)
+      7. Algorithmic Filtering        — drop MDI < 1/F, drop MDA < 0
+
+    NOTE — functions that must be updated to fully implement this protocol:
+      • denoise_corr() + detone_corr(): Not yet implemented. Step 1 currently uses
+        the raw correlation matrix as a placeholder.
+      • pca_cross_check(): Must be restructured to (a) project X into PCA components,
+        (b) run MDI/MDA/SFI on those components, (c) rank components by eigenvalue,
+        and (d) compute Kendall's tau between eigenvalue ranks and importance ranks.
+        Currently it ranks original features by variance-weighted PCA loading and
+        compares against a pre-built importance_summary — this does NOT match the
+        new protocol. It will also need clf, y, and years passed in so it can run
+        supervised importance directly on the components.
+      • filter_features(): Step 7 filtering should ultimately use the importance
+        results from the PCA components (Step 5) once pca_cross_check is updated.
+        Until then it continues to operate on raw-feature MDI/MDA/SFI distributions.
+
     Returns a dict of DataFrames.
     """
     print(f"\nRunning feature importance on {X.shape[0]} samples, "
           f"{X.shape[1]} features, {years.nunique()} years...")
 
-    # ── Build and fit RF ─────────────────────────────────────────────────
-    clf = build_rf(n_estimators=1000)
-    clf.fit(X, y, sample_weight=sample_weight)
-
-    # ── MDI ──────────────────────────────────────────────────────────────
-    print("\n1/4  MDI (in-sample)...")
-    mdi, mdi_raw = feat_imp_mdi(clf, list(X.columns))
-    mdi_pvals = compute_pvalues(mdi_raw, null_mean=1.0 / X.shape[1])
-
-    # ── MDA ──────────────────────────────────────────────────────────────
-    print("2/4  MDA (purged year-CV)...")
-    mda, mda_raw = feat_imp_mda(
-        build_rf(n_estimators=500), X, y, years, sample_weight
-    )
-    mda_pvals = compute_pvalues(mda_raw, null_mean=0.0)
-
-    # ── SFI ──────────────────────────────────────────────────────────────
-    sfi = None
-    sfi_raw = None
-    sfi_pvals = None
-    if run_sfi:
-        print("3/4  SFI (standalone, purged year-CV)...")
-        sfi, sfi_raw = feat_imp_sfi(
-            build_rf(n_estimators=300), X, y, years, sample_weight
-        )
-        # H0 for SFI: no better than null predictor (predicting the base rate)
-        null_ll = sfi["null_log_loss"].iloc[0] if "null_log_loss" in sfi.columns else 0.0
-        sfi_pvals = compute_pvalues(sfi_raw, null_mean=null_ll, alternative="greater")
-
-    # ── ONC + CFI ────────────────────────────────────────────────────────
-    print("4/4  ONC clustering + CFI...")
+    # ── Step 1: Unsupervised pre-processing — denoise / detone corr ──────
+    # TODO: replace with denoise_corr(corr) + detone_corr(...) once implemented.
+    # Denoising (Marcenko-Pastur) removes random eigenvectors; detoning removes
+    # the market "tone" (first eigenvector) so cluster structure is cleaner.
+    print("\n1/7  Unsupervised pre-processing (denoising / detoning)...")
     corr = X.corr()
-    clusters = onc_cluster(corr, max_clusters=max(2, X.shape[1] // 2))
+    corr_denoised = corr  # placeholder until denoise_corr / detone_corr exist
+
+    # ── Step 2: Unsupervised discovery — ONC clustering ──────────────────
+    print("2/7  ONC clustering (unsupervised structure discovery)...")
+    clusters = onc_cluster(corr_denoised, max_clusters=max(2, X.shape[1] // 2))
     print(f"    Found {len(clusters)} clusters:")
     for cid, members in clusters.items():
         print(f"    Cluster {cid}: {members}")
+
+    # ── Step 3: Supervised attribution — CFI (MDI + MDA on clusters) ─────
+    print("3/7  CFI — Clustered Feature Importance (MDI + MDA on clusters)...")
+    clf = build_rf(n_estimators=1000)
+    clf.fit(X, y, sample_weight=sample_weight)
 
     cfi_mdi = feat_imp_cfi_mdi(clf, list(X.columns), clusters)
     cfi_mda = feat_imp_cfi_mda(
         build_rf(n_estimators=300), X, y, years, clusters, sample_weight
     )
 
-    # ── Summary table ─────────────────────────────────────────────────────
+    # ── Steps 4–6: PCA + importance on components + Kendall's tau ────────
+    # TODO: once pca_cross_check() is updated, Steps 4–6 will live entirely
+    # inside that call:
+    #   Step 4 — fit PCA on X; rank components by eigenvalue
+    #   Step 5 — run MDI/MDA/SFI on PCA-transformed X (components as features)
+    #   Step 6 — weighted Kendall's tau between eigenvalue ranks and importance ranks
+    #
+    # For now, MDI/MDA/SFI still run on the original features (not PCA components)
+    # so that the existing pca_cross_check() signature is satisfied and Step 7
+    # filtering has per-feature distributions to work with.
+
+    print("4/7  MDI (in-sample, on original features — will move to PCA components)...")
+    mdi, mdi_raw = feat_imp_mdi(clf, list(X.columns))
+    mdi_pvals = compute_pvalues(mdi_raw, null_mean=1.0 / X.shape[1])
+
+    print("5/7  MDA (purged year-CV, on original features — will move to PCA components)...")
+    mda, mda_raw = feat_imp_mda(
+        build_rf(n_estimators=500), X, y, years, sample_weight
+    )
+    mda_pvals = compute_pvalues(mda_raw, null_mean=0.0)
+
+    sfi = None
+    sfi_raw = None
+    sfi_pvals = None
+    null_ll = 0.0
+    if run_sfi:
+        print("5/7  SFI (standalone, purged year-CV — will move to PCA components)...")
+        sfi, sfi_raw = feat_imp_sfi(
+            build_rf(n_estimators=300), X, y, years, sample_weight
+        )
+        null_ll = sfi["null_log_loss"].iloc[0] if "null_log_loss" in sfi.columns else 0.0
+        sfi_pvals = compute_pvalues(sfi_raw, null_mean=null_ll, alternative="greater")
+
+    # Build per-feature summary for pca_cross_check (temporary until Step 5
+    # moves inside pca_cross_check and runs on PCA components)
     summary = mdi[["mean"]].rename(columns={"mean": "MDI"})
     summary = summary.join(mdi_pvals.rename("p_MDI"), how="left")
     summary = summary.join(mda[["mean"]].rename(columns={"mean": "MDA"}), how="outer")
@@ -803,8 +842,11 @@ def run_all_importance(X: pd.DataFrame,
     print("\n=== Feature Importance Summary ===")
     print(summary.to_string())
 
-    # ── Feature filtering (de Prado criteria) ────────────────────────────
-    print("\n5/6  Feature filtering (MDI/MDA/SFI criteria)...")
+    print("\n6/7  PCA cross-check + weighted Kendall's tau...")
+    pca_info, tau_results = pca_cross_check(X, summary)
+
+    # ── Step 7: Algorithmic filtering ─────────────────────────────────────
+    print("\n7/7  Algorithmic filtering (MDI < 1/F + MDA detrimental)...")
     sfi_null_val = null_ll if run_sfi else None
     filter_report = filter_features(
         mdi_raw, mda_raw,
@@ -816,10 +858,6 @@ def run_all_importance(X: pd.DataFrame,
         print(f"    {tier}: {count}")
     survivors = filter_report[filter_report["tier"].isin(["STRONG", "MODERATE"])]
     print(f"    → {len(survivors)} features survive (STRONG + MODERATE)")
-
-    # ── PCA cross-check + Kendall's tau ──────────────────────────────────
-    print("\n6/6  PCA cross-check + weighted Kendall's tau...")
-    pca_info, tau_results = pca_cross_check(X, summary)
 
     return {
         "mdi":             mdi,
