@@ -17,8 +17,8 @@ Predict NCAA championship win probabilities for Final Four teams using game data
 
 | Team | Seed | Model P(Semi) | Market Implied |
 |------|------|-------------------|---------------|
-| Michigan | 1 | 51.4% | --% |
-| Arizona | 1 | 48.6% | --% |  
+| Michigan | 1 | 51.4% | ~50% |
+| Arizona | 1 | 48.6% | ~50% |  
 | Connecticut | 2 | 56.3% | 47% | 
 | Illinois | 3 | 43.7% | 53% | 
 
