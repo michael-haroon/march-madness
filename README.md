@@ -97,11 +97,14 @@ See `data/kaggle/KAGGLE.md` for Kaggle file schemas.
 
 ## Model Design
 
-See `MODEL.md` for the full architecture, including:
-- Why pairwise (Bradley-Terry style) over rank-4 modeling
-- De Prado feature importance suite (MDI, MDA, SFI, CFI)
-- Missing data strategy (binary missingness indicators)
-- Meta-labeling with Kalshi as primary model
+The active pipeline (`run_v2.py`) frames the problem as **pairwise game prediction** rather than rank-4 modeling — LightGBM predicts "who wins this game?" across ~1,400 historical tournament games (2003–2025), then derives championship probabilities via Monte Carlo bracket simulation (50k runs).
+
+Key design choices:
+- **Pairwise over rank-4**: more training data (~1,400 game rows vs ~84 Final Four rows), generalizes better
+- **Leave-one-year-out CV**: CV AUC 0.773, Log-Loss 0.608
+- **Feature importance**: de Prado suite — MDI, MDA, SFI, CFI. Kalshi features evaluated with SFI only (only 2 years of data)
+- **Missing data**: binary missingness indicators alongside imputed values
+- **Market blend**: Kalshi VWAP serves as primary model signal; game model blended at 30% weight
 
 See `FEATURES.md` for the complete feature catalog.
 
