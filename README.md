@@ -8,12 +8,12 @@ Predict NCAA championship win probabilities for Final Four teams using game data
 
 ## 2026 Predictions
 
-| Team | Seed | Model P(Champion) | Market Implied | Edge | Trade Signal |
-|------|------|-------------------|---------------|------|--------------|
-| Michigan | 1 | 35.9% | 37.6% | -1.6% | HOLD |
-| Arizona | 1 | 33.2% | 37.8% | -4.6% | BUY NO |
-| Connecticut | 2 | 18.8% | 10.0% | +8.8% | BUY YES |
-| Illinois | 3 | 12.1% | 14.6% | -2.5% | BUY NO |
+| Team | Seed | Model P(Champion) | Market Implied | Edge |
+|------|------|-------------------|---------------|------|
+| Michigan | 1 | 35.9% | 37.6% | -1.6% | 
+| Arizona | 1 | 33.2% | 37.8% | -4.6% | 
+| Connecticut | 2 | 18.8% | 10.0% | +8.8% | 
+| Illinois | 3 | 12.1% | 14.6% | -2.5% | 
 
 Model and market disagree most on Connecticut (model favors strongly) and Arizona (market favors).
 
