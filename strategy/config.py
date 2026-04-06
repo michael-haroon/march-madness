@@ -63,7 +63,7 @@ BRACKET_2026 = {
 }
 
 # ── Market blend ────────────────────────────────────────────────────────────
-DEFAULT_MARKET_WEIGHT = 0.10
+DEFAULT_MARKET_WEIGHT = 0.0     # this was used when I was not so confident in the model
 
 # ── Data paths ──────────────────────────────────────────────────────────────
 DATA_DIR = "data"

@@ -132,51 +132,52 @@ def main(market_weight: float = DEFAULT_MARKET_WEIGHT,
     print("  " + "-" * 60)
 
     # ── Step 6: Market blend ─────────────────────────────────────────────
-    print(f"\nStep 6: Blending with Kalshi market (weight={market_weight})...")
+    if market_weight>0:
+        print(f"\nStep 6: Blending with Kalshi market (weight={market_weight})...")
 
-    # Build model probs dict keyed by team name
-    model_probs = {}
-    for _, row in bracket_df.iterrows():
-        model_probs[row["team_name"]] = row["p_champion"]
+        # Build model probs dict keyed by team name
+        model_probs = {}
+        for _, row in bracket_df.iterrows():
+            model_probs[row["team_name"]] = row["p_champion"]
 
-    # Load market data
-    mkt_all = load_market_data(DATA_DIR, 2026)
-    # Filter to just our 4 teams, normalize
-    ff_names = set(name_to_id.keys())
+        # Load market data
+        mkt_all = load_market_data(DATA_DIR, 2026)
+        # Filter to just our 4 teams, normalize
+        ff_names = set(name_to_id.keys())
 
-    # Handle UConn -> Connecticut mapping
-    from feature_pipeline.config import TEAM_NAME_MAP
-    reverse_map = {v: k for k, v in TEAM_NAME_MAP.items()}
+        # Handle UConn -> Connecticut mapping
+        from feature_pipeline.config import TEAM_NAME_MAP
+        reverse_map = {v: k for k, v in TEAM_NAME_MAP.items()}
 
-    market_probs = {}
-    for name in ff_names:
-        # Try exact name and common aliases
-        candidates = [name] + [k for k, v in TEAM_NAME_MAP.items() if v == name]
-        for c in candidates:
-            if c in mkt_all:
-                market_probs[name] = mkt_all[c]
-                break
+        market_probs = {}
+        for name in ff_names:
+            # Try exact name and common aliases
+            candidates = [name] + [k for k, v in TEAM_NAME_MAP.items() if v == name]
+            for c in candidates:
+                if c in mkt_all:
+                    market_probs[name] = mkt_all[c]
+                    break
 
-    # Normalize market probs to sum to 1 across FF teams
-    mkt_total = sum(market_probs.values()) if market_probs else 0
-    if mkt_total > 0:
-        market_probs = {t: p / mkt_total for t, p in market_probs.items()}
+        # Normalize market probs to sum to 1 across FF teams
+        mkt_total = sum(market_probs.values()) if market_probs else 0
+        if mkt_total > 0:
+            market_probs = {t: p / mkt_total for t, p in market_probs.items()}
 
-    if market_probs:
-        blended = blend(model_probs, market_probs, market_weight)
-        edges = compute_edges(model_probs, market_probs)
-        recs = trade_recommendations(model_probs, market_probs)
+        if market_probs:
+            blended = blend(model_probs, market_probs, market_weight)
+            edges = compute_edges(model_probs, market_probs)
+            recs = trade_recommendations(model_probs, market_probs)
 
-        print("\n  " + "-" * 75)
-        print(f"  {'Team':<18} {'Model':>8} {'Market':>8} {'Blended':>8} {'Edge':>8}")
-        print("  " + "-" * 75)
-        for team in sorted(blended, key=lambda t: -blended[t]):
-            mp = model_probs.get(team, 0)
-            mk = market_probs.get(team, 0)
-            bl = blended[team]
-            ed = edges.get(team, 0)
-            print(f"  {team:<18} {mp:>8.1%} {mk:>8.1%} {bl:>8.1%} {ed:>+8.1%}")
-        print("  " + "-" * 75)
+            print("\n  " + "-" * 75)
+            print(f"  {'Team':<18} {'Model':>8} {'Market':>8} {'Blended':>8} {'Edge':>8}")
+            print("  " + "-" * 75)
+            for team in sorted(blended, key=lambda t: -blended[t]):
+                mp = model_probs.get(team, 0)
+                mk = market_probs.get(team, 0)
+                bl = blended[team]
+                ed = edges.get(team, 0)
+                print(f"  {team:<18} {mp:>8.1%} {mk:>8.1%} {bl:>8.1%} {ed:>+8.1%}")
+            print("  " + "-" * 75)
 
         print("\n  Trade recommendations (half-Kelly, $1000 bankroll):")
         for _, row in recs.iterrows():
@@ -187,8 +188,8 @@ def main(market_weight: float = DEFAULT_MARKET_WEIGHT,
 
         recs.to_csv(output / "trade_recommendations.csv", index=False)
     else:
-        print("  No market data available — skipping blend")
-        blended = model_probs
+        print(f"  Market weight is {market_weight} — skipping blend")
+        print("Change it in strategy/config.py")
 
     # ── Save outputs ─────────────────────────────────────────────────────
     bracket_df.to_csv(output / "predictions_2026.csv", index=False)
