@@ -8,22 +8,19 @@ Predict NCAA championship win probabilities for Final Four teams using game data
 
 ## 2026 Predictions
 
-| Team | Seed | Model P(Champion) | Market Implied |
-|------|------|-------------------|---------------|
-| Michigan | 1 | 35.9% | 37.6% |
-| Arizona | 1 | 33.2% | 37.8% |  
-| Connecticut | 2 | 18.8% | 10.0% | 
-| Illinois | 3 | 12.1% | 14.6% | 
+| Team | Seed | Model P(Champion) |
+|------|------|-------------------|
+| Michigan | 1 | 35.9% |
+| Arizona | 1 | 33.2% |
+| Connecticut | 2 | 18.8% |
+| Illinois | 3 | 12.1% |
 
-| Team | Seed | Model P(Semi) | Market Implied |
-|------|------|-------------------|---------------|
-| Michigan | 1 | 51.4% | ~50% |
-| Arizona | 1 | 48.6% | ~50% |  
-| Connecticut | 2 | 56.3% | 47% | 
-| Illinois | 3 | 43.7% | 53% | 
-
-
-Model and market disagree most on Connecticut (model favors strongly) and Arizona (market favors).
+| Team | Seed | Model P(Semi) |
+|------|------|---------------|
+| Michigan | 1 | 51.4% |
+| Arizona | 1 | 48.6% |
+| Connecticut | 2 | 56.3% |
+| Illinois | 3 | 43.7% |
 
 ---
 
@@ -34,13 +31,13 @@ conda activate tasty
 python -m feature_pipeline.run_v2 --data-dir data/ --output-dir output_v2/
 ```
 
-Outputs to `output_v2/`: `team_season_features.csv`, `game_pairs.csv`, `cv_results.csv`, `feature_importance.csv`, `2026_predictions.csv`.
+Outputs to `output_v2/`: `team_season_features.csv`, `game_pairs.csv`, `feature_importance_catalog.csv`, `filtered/feature_list.txt`.
 
 ---
 
 ## Pipeline
 
-The active pipeline is `feature_pipeline/run_v2.py`. It predicts "who wins this game?" across all ~1,400 historical tournament games (not just Final Four), then simulates the 2026 bracket via Monte Carlo.
+The active pipeline is `feature_pipeline/run_v2.py`. It frames the problem as pairwise game prediction — "who wins this game?" — across all ~1,400 historical tournament games (2003–2025), then runs de Prado feature importance analysis to identify the most predictive signals.
 
 ```
 MRegularSeasonDetailedResults.csv ──► build_team_season_features()
@@ -48,34 +45,30 @@ MMasseyOrdinals.csv                     (Season, TeamID) → 30+ features
 MNCAATourneySeeds.csv                   DayNum ≤ 132 only (no lookahead)
                                               │
                                enrich_with_existing_features()
-                                 team sheets, SOS, awards, market
+                                 team sheets, SOS, awards
                                               │
 MNCAATourneyCompactResults.csv ──► build_game_pairs()
                                     ~1,400 rows (2003–2025)
                                     diff features + binary label
                                               │
-                                    train_game_model()
-                                    LightGBM, leave-one-year-out CV
-                                    CV AUC: 0.773 | Log-Loss: 0.608
-                                              │
-                                    predict_final_four()
-                                    Monte Carlo bracket simulation
-                                              │
-Kalshi trades ──────────────────► blend_with_market()
-  (2025–2026)                       blended probs + model_edge
+                                    run_all_importance()
+                                    de Prado: ONC → MDI → MDA → SFI
+                                    feature survivors → filtered/feature_list.txt
 ```
+
+Kalshi market microstructure features (VWAP, OFI, momentum, volatility, trade count) are computed from ~696k tick-level trades and included in the feature matrix for importance analysis. They are treated as features on equal footing with game and team-sheet metrics — not as a separate model or blending signal.
 
 ### Key files
 
 | File | Purpose |
 |------|---------|
 | `feature_pipeline/run_v2.py` | Active entry point |
-| `feature_pipeline/game_model.py` | `build_team_season_features`, `build_game_pairs`, `train_game_model`, `predict_final_four` |
+| `feature_pipeline/game_model.py` | `build_team_season_features`, `build_game_pairs` |
 | `feature_pipeline/data_loader.py` | `load_all()` — team sheets, Massey, market loading |
 | `feature_pipeline/feature_engineering.py` | `build_features()`, feature group constants, PCA |
-| `feature_pipeline/market_features.py` | Kalshi VWAP, OFI, momentum, volatility |
-| `feature_pipeline/name_resolver.py` | Team name ↔ Kaggle TeamID (0% miss rate on all 279 teams) |
+| `feature_pipeline/market_features.py` | Kalshi VWAP, OFI, momentum, volatility — from raw tick data |
 | `feature_pipeline/feature_importance.py` | MDI, MDA, SFI, CFI, PurgedYearKFold |
+| `feature_pipeline/name_resolver.py` | Team name ↔ Kaggle TeamID (0% miss rate on all 279 teams) |
 | `strategy/` | Legacy Final-Four-only pipeline (not actively used) |
 
 ---
@@ -87,24 +80,23 @@ Kalshi trades ──────────────────► blend_wi
 | Kaggle game data | `data/kaggle/` | Game-by-game box scores 2003–2026, seeds, 200+ ranking systems |
 | Team sheets | `data/team_sheets/` | NET, KPI, SOR, BPI, POM, SAG, SOS splits — Final Four teams 2005–2026 |
 | Team stats | `data/{year}-team-stats/` | Season aggregate stats 2003–2026 |
-| Kalshi markets | `data/market_data_store/` | Tick-level futures trades 2025–2026 (~696k trades) |
+| Kalshi markets | `data/market_data_store/` | Tick-level futures trades 2025–2026 (~696k trades, all ~68 tournament teams) |
 | Labels | `data/yearlys/yearly_champions.csv` | Champions + Final Four finish 1939–2025 |
 
-See `REVIEW.md` for a detailed breakdown of what your sources have that Kaggle does not.  
 See `data/kaggle/KAGGLE.md` for Kaggle file schemas.
 
 ---
 
 ## Model Design
 
-The active pipeline (`run_v2.py`) frames the problem as **pairwise game prediction** rather than rank-4 modeling — LightGBM predicts "who wins this game?" across ~1,400 historical tournament games (2003–2025), then derives championship probabilities via Monte Carlo bracket simulation (50k runs).
+The active pipeline (`run_v2.py`) frames the problem as **pairwise game prediction** rather than rank-4 modeling — more training data (~1,400 game rows vs ~84 Final Four rows) and better generalization.
 
 Key design choices:
-- **Pairwise over rank-4**: more training data (~1,400 game rows vs ~84 Final Four rows), generalizes better
-- **Leave-one-year-out CV**: CV AUC 0.773, Log-Loss 0.608
-- **Feature importance**: de Prado suite — MDI, MDA, SFI, CFI. Kalshi features evaluated with SFI only (only 2 years of data)
+- **Pairwise over rank-4**: avoids the small-sample problem of Final-Four-only models
+- **Leave-one-year-out CV**: non-overlapping folds, no data leakage
+- **Feature importance**: de Prado suite — MDI, MDA, SFI with ONC clustering. Kalshi features evaluated on equal footing via SFI (limited to 2 years of data, so MDI/MDA have wide error bars)
 - **Missing data**: binary missingness indicators alongside imputed values
-- **Market blend**: Kalshi VWAP serves as primary model signal; game model blended at 30% weight
+- **Market microstructure**: Kalshi tick data processed into VWAP, OFI, price momentum, and volatility features. These enter the feature matrix as inputs — not as a separate blending model
 
 See `FEATURES.md` for the complete feature catalog.
 
@@ -116,7 +108,7 @@ See `FEATURES.md` for the complete feature catalog.
 march-madness/
 ├── feature_pipeline/        # Active ML pipeline
 │   ├── run_v2.py            # Entry point
-│   ├── game_model.py        # Core model logic
+│   ├── game_model.py        # Feature construction
 │   ├── data_loader.py
 │   ├── feature_engineering.py
 │   ├── feature_importance.py
@@ -133,7 +125,6 @@ march-madness/
 │   └── yearlys/             # Champions, awards, locations
 ├── output_v2/               # Latest pipeline outputs
 ├── README.md
-├── MODEL.md                 # ML architecture and theory
 ├── FEATURES.md              # Feature catalog
 ├── REVIEW.md                # Data source audit and lookahead analysis
 └── CLAUDE.md                # Claude Code instructions
